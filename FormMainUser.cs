@@ -64,7 +64,7 @@ namespace BMKG_DataSafe_2
                     //{
                     //    flowLayoutPanel1.Controls.Clear();
                     //}
-                    //else
+                    //elsejcbeskjvbkjebvjkbejkbvjkeb
                     flowLayoutPanel1.Controls.Add(obj);
                 }
                 con.Close();
