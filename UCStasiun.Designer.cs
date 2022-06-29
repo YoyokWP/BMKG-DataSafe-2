@@ -38,8 +38,6 @@ namespace BMKG_DataSafe_2
             this.lblWmoid = new System.Windows.Forms.Label();
             this.lblLat = new System.Windows.Forms.Label();
             this.lblLong = new System.Windows.Forms.Label();
-            this.linkLabelOpen = new System.Windows.Forms.LinkLabel();
-            this.linkLabelInput = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -141,38 +139,12 @@ namespace BMKG_DataSafe_2
             this.lblLong.TabIndex = 8;
             this.lblLong.Text = "Longitude";
             // 
-            // linkLabelOpen
-            // 
-            this.linkLabelOpen.AutoSize = true;
-            this.linkLabelOpen.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelOpen.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
-            this.linkLabelOpen.Location = new System.Drawing.Point(825, 13);
-            this.linkLabelOpen.Name = "linkLabelOpen";
-            this.linkLabelOpen.Size = new System.Drawing.Size(77, 17);
-            this.linkLabelOpen.TabIndex = 9;
-            this.linkLabelOpen.TabStop = true;
-            this.linkLabelOpen.Text = "Open Data";
-            this.linkLabelOpen.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelOpen_LinkClicked);
-            // 
-            // linkLabelInput
-            // 
-            this.linkLabelInput.AutoSize = true;
-            this.linkLabelInput.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelInput.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
-            this.linkLabelInput.Location = new System.Drawing.Point(986, 16);
-            this.linkLabelInput.Name = "linkLabelInput";
-            this.linkLabelInput.Size = new System.Drawing.Size(73, 17);
-            this.linkLabelInput.TabIndex = 10;
-            this.linkLabelInput.TabStop = true;
-            this.linkLabelInput.Text = "Input Data";
-            this.linkLabelInput.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelInput_LinkClicked);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(891, 45);
+            this.label2.Location = new System.Drawing.Point(891, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 19);
             this.label2.TabIndex = 11;
@@ -184,7 +156,7 @@ namespace BMKG_DataSafe_2
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(807, 75);
+            this.textBox1.Location = new System.Drawing.Point(807, 56);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(277, 19);
             this.textBox1.TabIndex = 12;
@@ -198,8 +170,6 @@ namespace BMKG_DataSafe_2
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(65)))));
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.linkLabelInput);
-            this.Controls.Add(this.linkLabelOpen);
             this.Controls.Add(this.lblLong);
             this.Controls.Add(this.lblLat);
             this.Controls.Add(this.lblWmoid);
@@ -230,8 +200,6 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.Label lblWmoid;
         private System.Windows.Forms.Label lblLat;
         private System.Windows.Forms.Label lblLong;
-        private System.Windows.Forms.LinkLabel linkLabelOpen;
-        private System.Windows.Forms.LinkLabel linkLabelInput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
     }

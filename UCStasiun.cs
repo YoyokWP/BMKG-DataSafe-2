@@ -29,6 +29,7 @@ namespace BMKG_DataSafe_2
         {
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 8, 8));
         }
+
         public UCStasiun()
         {
             InitializeComponent();
@@ -68,16 +69,6 @@ namespace BMKG_DataSafe_2
         {
             get => lblLong.Text;
             set => lblLong.Text = value;
-        }
-
-        private void linkLabelOpen_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabelInput_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
         }
     }
 }

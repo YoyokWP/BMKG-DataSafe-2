@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BMKG_DataSafe_2
 {
-    public partial class Form1 : Form
+    public partial class FormInputData : Form
     {
-        public Form1()
+        public FormInputData()
         {
             InitializeComponent();
+        }
+
+        private void FormInputData_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -34,11 +34,15 @@ namespace BMKG_DataSafe_2
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose1 = new System.Windows.Forms.Button();
             this.panelControl = new System.Windows.Forms.Panel();
+            this.btnEntry = new System.Windows.Forms.Button();
+            this.pictureBoxAbout = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccount = new System.Windows.Forms.PictureBox();
+            this.btnOpen = new System.Windows.Forms.Button();
             this.textBoxTanggal = new System.Windows.Forms.TextBox();
             this.textBoxJam = new System.Windows.Forms.TextBox();
-            this.pictureBoxAccount = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEntry = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAbout = new System.Windows.Forms.PictureBox();
+            this.pictureBoxOpen = new System.Windows.Forms.PictureBox();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.pictureBoxDashboard = new System.Windows.Forms.PictureBox();
@@ -51,9 +55,11 @@ namespace BMKG_DataSafe_2
             this.labelWelcome = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEntry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOpen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,11 +91,15 @@ namespace BMKG_DataSafe_2
             // 
             // panelControl
             // 
+            this.panelControl.Controls.Add(this.btnEntry);
+            this.panelControl.Controls.Add(this.pictureBoxAbout);
+            this.panelControl.Controls.Add(this.pictureBoxAccount);
+            this.panelControl.Controls.Add(this.btnOpen);
             this.panelControl.Controls.Add(this.textBoxTanggal);
             this.panelControl.Controls.Add(this.textBoxJam);
-            this.panelControl.Controls.Add(this.pictureBoxAccount);
+            this.panelControl.Controls.Add(this.pictureBoxEntry);
             this.panelControl.Controls.Add(this.pictureBox6);
-            this.panelControl.Controls.Add(this.pictureBoxAbout);
+            this.panelControl.Controls.Add(this.pictureBoxOpen);
             this.panelControl.Controls.Add(this.btnAbout);
             this.panelControl.Controls.Add(this.btnAccount);
             this.panelControl.Controls.Add(this.pictureBoxDashboard);
@@ -101,6 +111,56 @@ namespace BMKG_DataSafe_2
             this.panelControl.Name = "panelControl";
             this.panelControl.Size = new System.Drawing.Size(315, 775);
             this.panelControl.TabIndex = 1;
+            // 
+            // btnEntry
+            // 
+            this.btnEntry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.btnEntry.FlatAppearance.BorderSize = 0;
+            this.btnEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntry.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnEntry.Location = new System.Drawing.Point(7, 235);
+            this.btnEntry.Name = "btnEntry";
+            this.btnEntry.Size = new System.Drawing.Size(305, 54);
+            this.btnEntry.TabIndex = 9;
+            this.btnEntry.Text = "          Entry Data";
+            this.btnEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEntry.UseVisualStyleBackColor = false;
+            this.btnEntry.Click += new System.EventHandler(this.btnEntry_Click);
+            // 
+            // pictureBoxAbout
+            // 
+            this.pictureBoxAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.pictureBoxAbout.Location = new System.Drawing.Point(0, 403);
+            this.pictureBoxAbout.Name = "pictureBoxAbout";
+            this.pictureBoxAbout.Size = new System.Drawing.Size(5, 54);
+            this.pictureBoxAbout.TabIndex = 11;
+            this.pictureBoxAbout.TabStop = false;
+            // 
+            // pictureBoxAccount
+            // 
+            this.pictureBoxAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.pictureBoxAccount.Location = new System.Drawing.Point(0, 347);
+            this.pictureBoxAccount.Name = "pictureBoxAccount";
+            this.pictureBoxAccount.Size = new System.Drawing.Size(5, 54);
+            this.pictureBoxAccount.TabIndex = 10;
+            this.pictureBoxAccount.TabStop = false;
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.btnOpen.FlatAppearance.BorderSize = 0;
+            this.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpen.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnOpen.Location = new System.Drawing.Point(7, 291);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(305, 54);
+            this.btnOpen.TabIndex = 8;
+            this.btnOpen.Text = "          Open Data";
+            this.btnOpen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOpen.UseVisualStyleBackColor = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // textBoxTanggal
             // 
@@ -126,32 +186,32 @@ namespace BMKG_DataSafe_2
             this.textBoxJam.TabIndex = 6;
             this.textBoxJam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBoxAccount
+            // pictureBoxEntry
             // 
-            this.pictureBoxAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
-            this.pictureBoxAccount.Location = new System.Drawing.Point(0, 236);
-            this.pictureBoxAccount.Name = "pictureBoxAccount";
-            this.pictureBoxAccount.Size = new System.Drawing.Size(5, 54);
-            this.pictureBoxAccount.TabIndex = 3;
-            this.pictureBoxAccount.TabStop = false;
+            this.pictureBoxEntry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.pictureBoxEntry.Location = new System.Drawing.Point(0, 235);
+            this.pictureBoxEntry.Name = "pictureBoxEntry";
+            this.pictureBoxEntry.Size = new System.Drawing.Size(5, 54);
+            this.pictureBoxEntry.TabIndex = 3;
+            this.pictureBoxEntry.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Location = new System.Drawing.Point(30, 365);
+            this.pictureBox6.Location = new System.Drawing.Point(30, 462);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(255, 1);
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBoxAbout
+            // pictureBoxOpen
             // 
-            this.pictureBoxAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
-            this.pictureBoxAbout.Location = new System.Drawing.Point(0, 293);
-            this.pictureBoxAbout.Name = "pictureBoxAbout";
-            this.pictureBoxAbout.Size = new System.Drawing.Size(5, 54);
-            this.pictureBoxAbout.TabIndex = 4;
-            this.pictureBoxAbout.TabStop = false;
+            this.pictureBoxOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.pictureBoxOpen.Location = new System.Drawing.Point(0, 291);
+            this.pictureBoxOpen.Name = "pictureBoxOpen";
+            this.pictureBoxOpen.Size = new System.Drawing.Size(5, 54);
+            this.pictureBoxOpen.TabIndex = 4;
+            this.pictureBoxOpen.TabStop = false;
             // 
             // btnAbout
             // 
@@ -160,7 +220,7 @@ namespace BMKG_DataSafe_2
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbout.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnAbout.Location = new System.Drawing.Point(7, 293);
+            this.btnAbout.Location = new System.Drawing.Point(7, 402);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(305, 54);
             this.btnAbout.TabIndex = 2;
@@ -176,7 +236,7 @@ namespace BMKG_DataSafe_2
             this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccount.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnAccount.Location = new System.Drawing.Point(7, 236);
+            this.btnAccount.Location = new System.Drawing.Point(7, 347);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Size = new System.Drawing.Size(305, 54);
             this.btnAccount.TabIndex = 1;
@@ -234,9 +294,9 @@ namespace BMKG_DataSafe_2
             // 
             this.flowLayoutPanel1.AllowDrop = true;
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(321, 91);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(321, 81);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1119, 707);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1119, 717);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // timer1
@@ -283,9 +343,11 @@ namespace BMKG_DataSafe_2
             this.panel1.ResumeLayout(false);
             this.panelControl.ResumeLayout(false);
             this.panelControl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEntry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOpen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -303,8 +365,8 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBoxAbout;
-        private System.Windows.Forms.PictureBox pictureBoxAccount;
+        private System.Windows.Forms.PictureBox pictureBoxOpen;
+        private System.Windows.Forms.PictureBox pictureBoxEntry;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.PictureBox pictureBoxDashboard;
@@ -315,5 +377,9 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBoxWelcome;
         private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.PictureBox pictureBoxAbout;
+        private System.Windows.Forms.PictureBox pictureBoxAccount;
+        private System.Windows.Forms.Button btnEntry;
+        private System.Windows.Forms.Button btnOpen;
     }
 }

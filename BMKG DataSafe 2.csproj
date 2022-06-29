@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +90,18 @@
     <Compile Include="UCAccount.Designer.cs">
       <DependentUpon>UCAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEntry.Designer.cs">
+      <DependentUpon>UCEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOpen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOpen.Designer.cs">
+      <DependentUpon>UCOpen.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCStasiun.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCAccount.resx">
       <DependentUpon>UCAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEntry.resx">
+      <DependentUpon>UCEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOpen.resx">
+      <DependentUpon>UCOpen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCStasiun.resx">
       <DependentUpon>UCStasiun.cs</DependentUpon>

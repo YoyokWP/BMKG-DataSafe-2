@@ -18,6 +18,8 @@ namespace BMKG_DataSafe_2
             InitializeComponent();
 
             pictureBoxDashboard.Hide();
+            pictureBoxEntry.Hide();
+            pictureBoxOpen.Hide();
             pictureBoxAccount.Hide();
             pictureBoxAbout.Hide();
 
@@ -29,11 +31,6 @@ namespace BMKG_DataSafe_2
         {
             textBoxJam.Text = DateTime.Now.ToLongTimeString();
             textBoxTanggal.Text = DateTime.Now.ToLongDateString();
-        }
-
-        private void ucStasiun1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -58,14 +55,14 @@ namespace BMKG_DataSafe_2
                     string latitude = "" + r[3];
                     string longitude = "" + r[4];
 
-                    UCStasiun obj = new UCStasiun(id, stasiun, wmoid, latitude, longitude);
+                    UCStasiun ucstasiun = new UCStasiun(id, stasiun, wmoid, latitude, longitude);
 
-                    //if (flowLayoutPanel1.Controls.Count < 0)
-                    //{
-                    //    flowLayoutPanel1.Controls.Clear();
-                    //}
-                    //elsejcbeskjvbkjebvjkbejkbvjkeb
-                    flowLayoutPanel1.Controls.Add(obj);
+                    if (flowLayoutPanel1.Controls.Count < 0)
+                    {
+                        flowLayoutPanel1.Controls.Clear();
+                    }
+                    else
+                        flowLayoutPanel1.Controls.Add(ucstasiun);
                 }
                 con.Close();
             }
@@ -80,14 +77,87 @@ namespace BMKG_DataSafe_2
 
             #region Tampilan tombol
             pictureBoxDashboard.Show();
+            pictureBoxEntry.Hide();
+            pictureBoxOpen.Hide();
             pictureBoxAccount.Hide();
             pictureBoxAbout.Hide();
 
             btnDashboard.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+            btnEntry.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnOpen.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
             btnAccount.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
             btnAbout.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
 
             btnDashboard.BackColor = System.Drawing.Color.FromArgb(29, 35, 44);
+            btnEntry.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnOpen.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnAccount.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnAbout.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            #endregion
+        }
+
+        private void btnEntry_Click(object sender, EventArgs e)
+        {
+            UCEntry ucentry = new UCEntry();
+
+            btnEntry.Enabled = true;
+            flowLayoutPanel1.Controls.Clear();
+            flowLayoutPanel1.Controls.Add(ucentry);
+
+            labelWelcome.SendToBack();
+            pictureBoxWelcome.SendToBack();
+
+
+
+
+            #region Tampilan tombol
+            pictureBoxDashboard.Hide();
+            pictureBoxEntry.Show();
+            pictureBoxOpen.Hide();
+            pictureBoxAccount.Hide();
+            pictureBoxAbout.Hide();
+
+            btnDashboard.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnEntry.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+            btnOpen.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnAccount.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnAbout.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+
+            btnDashboard.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnEntry.BackColor = System.Drawing.Color.FromArgb(29, 35, 44);
+            btnOpen.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnAccount.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnAbout.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            #endregion
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            UCOpen ucopen = new UCOpen();
+
+            btnOpen.Enabled = true;
+            flowLayoutPanel1.Controls.Clear();
+            flowLayoutPanel1.Controls.Add(ucopen);
+
+            labelWelcome.SendToBack();
+            pictureBoxWelcome.SendToBack();
+
+            #region Tampilan tombol
+            pictureBoxDashboard.Hide();
+            pictureBoxEntry.Hide();
+            pictureBoxOpen.Show();
+            pictureBoxAccount.Hide();
+            pictureBoxAbout.Hide();
+
+            btnDashboard.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnEntry.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnOpen.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+            btnAccount.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnAbout.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+
+            btnDashboard.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnEntry.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnOpen.BackColor = System.Drawing.Color.FromArgb(29, 35, 44);
             btnAccount.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
             btnAbout.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
             #endregion
@@ -106,14 +176,20 @@ namespace BMKG_DataSafe_2
 
             #region Tampilan tombol
             pictureBoxDashboard.Hide();
-            pictureBoxAbout.Hide();
+            pictureBoxEntry.Hide();
+            pictureBoxOpen.Hide();
             pictureBoxAccount.Show();
+            pictureBoxAbout.Hide();
 
             btnDashboard.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnEntry.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnOpen.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
             btnAccount.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
             btnAbout.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
 
             btnDashboard.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnEntry.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnOpen.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
             btnAccount.BackColor = System.Drawing.Color.FromArgb(29, 35, 44);
             btnAbout.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
             #endregion
@@ -132,14 +208,20 @@ namespace BMKG_DataSafe_2
 
             #region Tampilan tombol
             pictureBoxDashboard.Hide();
+            pictureBoxEntry.Hide();
+            pictureBoxOpen.Hide();
             pictureBoxAccount.Hide();
             pictureBoxAbout.Show();
 
             btnDashboard.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnEntry.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            btnOpen.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
             btnAccount.ForeColor = System.Drawing.Color.FromArgb(224, 224, 224);
             btnAbout.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
 
             btnDashboard.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnEntry.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
+            btnOpen.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
             btnAccount.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
             btnAbout.BackColor = System.Drawing.Color.FromArgb(29, 35, 44);
             #endregion
@@ -149,7 +231,5 @@ namespace BMKG_DataSafe_2
         {
             Application.Exit();
         }
-
-        
     }
 }
