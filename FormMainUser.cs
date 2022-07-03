@@ -107,9 +107,6 @@ namespace BMKG_DataSafe_2
             labelWelcome.SendToBack();
             pictureBoxWelcome.SendToBack();
 
-
-
-
             #region Tampilan tombol
             pictureBoxDashboard.Hide();
             pictureBoxEntry.Show();

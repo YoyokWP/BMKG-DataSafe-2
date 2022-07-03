@@ -34,7 +34,7 @@ namespace BMKG_DataSafe_2
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonEncrypt = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.textBoxArahMax = new System.Windows.Forms.TextBox();
@@ -182,7 +182,7 @@ namespace BMKG_DataSafe_2
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(65)))));
             this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.buttonSave);
+            this.panel1.Controls.Add(this.buttonEncrypt);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.panel14);
@@ -203,9 +203,9 @@ namespace BMKG_DataSafe_2
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(16, 40);
+            this.panel1.Location = new System.Drawing.Point(16, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1046, 633);
+            this.panel1.Size = new System.Drawing.Size(1046, 562);
             this.panel1.TabIndex = 19;
             // 
             // comboBox2
@@ -217,16 +217,16 @@ namespace BMKG_DataSafe_2
             this.comboBox2.Size = new System.Drawing.Size(295, 28);
             this.comboBox2.TabIndex = 37;
             // 
-            // buttonSave
+            // buttonEncrypt
             // 
-            this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSave.Location = new System.Drawing.Point(399, 515);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(245, 35);
-            this.buttonSave.TabIndex = 36;
-            this.buttonSave.Text = "Save Data";
-            this.buttonSave.UseVisualStyleBackColor = true;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            this.buttonEncrypt.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEncrypt.Location = new System.Drawing.Point(402, 515);
+            this.buttonEncrypt.Name = "buttonEncrypt";
+            this.buttonEncrypt.Size = new System.Drawing.Size(245, 35);
+            this.buttonEncrypt.TabIndex = 36;
+            this.buttonEncrypt.Text = "Encrypt Data";
+            this.buttonEncrypt.UseVisualStyleBackColor = true;
+            this.buttonEncrypt.Click += new System.EventHandler(this.buttonEncrypt_Click);
             // 
             // panel14
             // 
@@ -1131,7 +1131,7 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBoxHujan;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonEncrypt;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
