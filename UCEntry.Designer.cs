@@ -36,75 +36,75 @@ namespace BMKG_DataSafe_2
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.buttonEncrypt = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.labelArahMax = new System.Windows.Forms.Label();
             this.textBoxArahMax = new System.Windows.Forms.TextBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.labelAnginMax = new System.Windows.Forms.Label();
             this.textBoxKecepatanMax = new System.Windows.Forms.TextBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.labelMatahari = new System.Windows.Forms.Label();
             this.textBoxMatahari = new System.Windows.Forms.TextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.labelArahAngin = new System.Windows.Forms.Label();
             this.textBoxArahAngin = new System.Windows.Forms.TextBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.labelAnginRata = new System.Windows.Forms.Label();
             this.textBoxKecepatanAnginRata = new System.Windows.Forms.TextBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.labelKelembabanRata = new System.Windows.Forms.Label();
             this.textBoxKelembabanRata = new System.Windows.Forms.TextBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelKelembaban18 = new System.Windows.Forms.Label();
             this.textBoxKelembaban18 = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelSuhuMin = new System.Windows.Forms.Label();
             this.textBoxSuhuMin = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelKelembaban13 = new System.Windows.Forms.Label();
             this.textBoxKelembaban13 = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelSuhuMax = new System.Windows.Forms.Label();
             this.textBoxSuhuMax = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelKelembaban07 = new System.Windows.Forms.Label();
             this.textBoxKelembaban07 = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelSuhuRata = new System.Windows.Forms.Label();
             this.textBoxSuhuRata = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.labelTekanan = new System.Windows.Forms.Label();
             this.textBoxTekanan = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelSuhu18 = new System.Windows.Forms.Label();
             this.textBoxSuhu18 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.labelCuacaKhusus = new System.Windows.Forms.Label();
             this.textBoxCuacaKhusus = new System.Windows.Forms.TextBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelSuhu13 = new System.Windows.Forms.Label();
             this.textBoxSuhu13 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.labelCurahHujan = new System.Windows.Forms.Label();
             this.textBoxHujan = new System.Windows.Forms.TextBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelSuhu07 = new System.Windows.Forms.Label();
             this.textBoxSuhu07 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -167,6 +167,7 @@ namespace BMKG_DataSafe_2
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(224, 26);
             this.dateTimePicker1.TabIndex = 17;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 7, 6, 0, 0, 0, 0);
             // 
             // comboBox1
             // 
@@ -231,7 +232,7 @@ namespace BMKG_DataSafe_2
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel14.Controls.Add(this.label14);
+            this.panel14.Controls.Add(this.labelArahMax);
             this.panel14.Controls.Add(this.textBoxArahMax);
             this.panel14.Controls.Add(this.pictureBox13);
             this.panel14.Location = new System.Drawing.Point(702, 435);
@@ -239,17 +240,17 @@ namespace BMKG_DataSafe_2
             this.panel14.Size = new System.Drawing.Size(315, 69);
             this.panel14.TabIndex = 31;
             // 
-            // label14
+            // labelArahMax
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label14.Location = new System.Drawing.Point(99, 2);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(90, 20);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Arah Angin";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelArahMax.AutoSize = true;
+            this.labelArahMax.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelArahMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelArahMax.Location = new System.Drawing.Point(99, 2);
+            this.labelArahMax.Name = "labelArahMax";
+            this.labelArahMax.Size = new System.Drawing.Size(90, 20);
+            this.labelArahMax.TabIndex = 1;
+            this.labelArahMax.Text = "Arah Angin";
+            this.labelArahMax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxArahMax
             // 
@@ -260,6 +261,7 @@ namespace BMKG_DataSafe_2
             this.textBoxArahMax.Size = new System.Drawing.Size(226, 21);
             this.textBoxArahMax.TabIndex = 0;
             this.textBoxArahMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxArahMax.TextChanged += new System.EventHandler(this.textBoxArahMax_TextChanged);
             // 
             // pictureBox13
             // 
@@ -273,7 +275,7 @@ namespace BMKG_DataSafe_2
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel15.Controls.Add(this.label15);
+            this.panel15.Controls.Add(this.labelAnginMax);
             this.panel15.Controls.Add(this.textBoxKecepatanMax);
             this.panel15.Controls.Add(this.pictureBox14);
             this.panel15.Location = new System.Drawing.Point(702, 360);
@@ -281,17 +283,17 @@ namespace BMKG_DataSafe_2
             this.panel15.Size = new System.Drawing.Size(315, 69);
             this.panel15.TabIndex = 32;
             // 
-            // label15
+            // labelAnginMax
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label15.Location = new System.Drawing.Point(47, 3);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(203, 20);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Kecepatan Angin Terbesar";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelAnginMax.AutoSize = true;
+            this.labelAnginMax.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnginMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelAnginMax.Location = new System.Drawing.Point(47, 3);
+            this.labelAnginMax.Name = "labelAnginMax";
+            this.labelAnginMax.Size = new System.Drawing.Size(203, 20);
+            this.labelAnginMax.TabIndex = 1;
+            this.labelAnginMax.Text = "Kecepatan Angin Terbesar";
+            this.labelAnginMax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxKecepatanMax
             // 
@@ -302,6 +304,7 @@ namespace BMKG_DataSafe_2
             this.textBoxKecepatanMax.Size = new System.Drawing.Size(226, 21);
             this.textBoxKecepatanMax.TabIndex = 0;
             this.textBoxKecepatanMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxKecepatanMax.TextChanged += new System.EventHandler(this.textBoxKecepatanMax_TextChanged);
             // 
             // pictureBox14
             // 
@@ -315,7 +318,7 @@ namespace BMKG_DataSafe_2
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel16.Controls.Add(this.label16);
+            this.panel16.Controls.Add(this.labelMatahari);
             this.panel16.Controls.Add(this.textBoxMatahari);
             this.panel16.Controls.Add(this.pictureBox15);
             this.panel16.Location = new System.Drawing.Point(367, 135);
@@ -323,17 +326,17 @@ namespace BMKG_DataSafe_2
             this.panel16.Size = new System.Drawing.Size(315, 69);
             this.panel16.TabIndex = 33;
             // 
-            // label16
+            // labelMatahari
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label16.Location = new System.Drawing.Point(46, 3);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(206, 20);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Lama Penyinaran Matahari";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelMatahari.AutoSize = true;
+            this.labelMatahari.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMatahari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelMatahari.Location = new System.Drawing.Point(46, 3);
+            this.labelMatahari.Name = "labelMatahari";
+            this.labelMatahari.Size = new System.Drawing.Size(206, 20);
+            this.labelMatahari.TabIndex = 1;
+            this.labelMatahari.Text = "Lama Penyinaran Matahari";
+            this.labelMatahari.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxMatahari
             // 
@@ -344,6 +347,7 @@ namespace BMKG_DataSafe_2
             this.textBoxMatahari.Size = new System.Drawing.Size(226, 21);
             this.textBoxMatahari.TabIndex = 0;
             this.textBoxMatahari.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMatahari.TextChanged += new System.EventHandler(this.textBoxMatahari_TextChanged);
             // 
             // pictureBox15
             // 
@@ -357,7 +361,7 @@ namespace BMKG_DataSafe_2
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel17.Controls.Add(this.label17);
+            this.panel17.Controls.Add(this.labelArahAngin);
             this.panel17.Controls.Add(this.textBoxArahAngin);
             this.panel17.Controls.Add(this.pictureBox16);
             this.panel17.Location = new System.Drawing.Point(702, 285);
@@ -365,17 +369,17 @@ namespace BMKG_DataSafe_2
             this.panel17.Size = new System.Drawing.Size(315, 69);
             this.panel17.TabIndex = 34;
             // 
-            // label17
+            // labelArahAngin
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label17.Location = new System.Drawing.Point(66, 3);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(169, 20);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Arah Angin Terbanyak";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelArahAngin.AutoSize = true;
+            this.labelArahAngin.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelArahAngin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelArahAngin.Location = new System.Drawing.Point(66, 3);
+            this.labelArahAngin.Name = "labelArahAngin";
+            this.labelArahAngin.Size = new System.Drawing.Size(169, 20);
+            this.labelArahAngin.TabIndex = 1;
+            this.labelArahAngin.Text = "Arah Angin Terbanyak";
+            this.labelArahAngin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxArahAngin
             // 
@@ -386,6 +390,7 @@ namespace BMKG_DataSafe_2
             this.textBoxArahAngin.Size = new System.Drawing.Size(226, 21);
             this.textBoxArahAngin.TabIndex = 0;
             this.textBoxArahAngin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxArahAngin.TextChanged += new System.EventHandler(this.textBoxArahAngin_TextChanged);
             // 
             // pictureBox16
             // 
@@ -399,7 +404,7 @@ namespace BMKG_DataSafe_2
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel18.Controls.Add(this.label18);
+            this.panel18.Controls.Add(this.labelAnginRata);
             this.panel18.Controls.Add(this.textBoxKecepatanAnginRata);
             this.panel18.Controls.Add(this.pictureBox17);
             this.panel18.Location = new System.Drawing.Point(702, 210);
@@ -407,17 +412,17 @@ namespace BMKG_DataSafe_2
             this.panel18.Size = new System.Drawing.Size(315, 69);
             this.panel18.TabIndex = 35;
             // 
-            // label18
+            // labelAnginRata
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label18.Location = new System.Drawing.Point(39, 3);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(223, 20);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "Kecepatan Angin Rata - Rata";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelAnginRata.AutoSize = true;
+            this.labelAnginRata.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnginRata.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelAnginRata.Location = new System.Drawing.Point(39, 3);
+            this.labelAnginRata.Name = "labelAnginRata";
+            this.labelAnginRata.Size = new System.Drawing.Size(223, 20);
+            this.labelAnginRata.TabIndex = 1;
+            this.labelAnginRata.Text = "Kecepatan Angin Rata - Rata";
+            this.labelAnginRata.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxKecepatanAnginRata
             // 
@@ -428,6 +433,7 @@ namespace BMKG_DataSafe_2
             this.textBoxKecepatanAnginRata.Size = new System.Drawing.Size(226, 21);
             this.textBoxKecepatanAnginRata.TabIndex = 0;
             this.textBoxKecepatanAnginRata.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxKecepatanAnginRata.TextChanged += new System.EventHandler(this.textBoxKecepatanAnginRata_TextChanged);
             // 
             // pictureBox17
             // 
@@ -441,7 +447,7 @@ namespace BMKG_DataSafe_2
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel19.Controls.Add(this.label19);
+            this.panel19.Controls.Add(this.labelKelembabanRata);
             this.panel19.Controls.Add(this.textBoxKelembabanRata);
             this.panel19.Controls.Add(this.pictureBox18);
             this.panel19.Location = new System.Drawing.Point(702, 135);
@@ -449,17 +455,17 @@ namespace BMKG_DataSafe_2
             this.panel19.Size = new System.Drawing.Size(315, 69);
             this.panel19.TabIndex = 30;
             // 
-            // label19
+            // labelKelembabanRata
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label19.Location = new System.Drawing.Point(28, 3);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(238, 20);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Kelembaban Udara Rata - Rata";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelKelembabanRata.AutoSize = true;
+            this.labelKelembabanRata.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKelembabanRata.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelKelembabanRata.Location = new System.Drawing.Point(28, 3);
+            this.labelKelembabanRata.Name = "labelKelembabanRata";
+            this.labelKelembabanRata.Size = new System.Drawing.Size(238, 20);
+            this.labelKelembabanRata.TabIndex = 1;
+            this.labelKelembabanRata.Text = "Kelembaban Udara Rata - Rata";
+            this.labelKelembabanRata.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxKelembabanRata
             // 
@@ -470,6 +476,7 @@ namespace BMKG_DataSafe_2
             this.textBoxKelembabanRata.Size = new System.Drawing.Size(226, 21);
             this.textBoxKelembabanRata.TabIndex = 0;
             this.textBoxKelembabanRata.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxKelembabanRata.TextChanged += new System.EventHandler(this.textBoxKelembabanRata_TextChanged);
             // 
             // pictureBox18
             // 
@@ -483,7 +490,7 @@ namespace BMKG_DataSafe_2
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel8.Controls.Add(this.label8);
+            this.panel8.Controls.Add(this.labelKelembaban18);
             this.panel8.Controls.Add(this.textBoxKelembaban18);
             this.panel8.Controls.Add(this.pictureBox7);
             this.panel8.Location = new System.Drawing.Point(702, 60);
@@ -491,17 +498,17 @@ namespace BMKG_DataSafe_2
             this.panel8.Size = new System.Drawing.Size(315, 69);
             this.panel8.TabIndex = 25;
             // 
-            // label8
+            // labelKelembaban18
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label8.Location = new System.Drawing.Point(32, 3);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(235, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Kelembaban Udara Pukul 18.00";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelKelembaban18.AutoSize = true;
+            this.labelKelembaban18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKelembaban18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelKelembaban18.Location = new System.Drawing.Point(32, 3);
+            this.labelKelembaban18.Name = "labelKelembaban18";
+            this.labelKelembaban18.Size = new System.Drawing.Size(235, 20);
+            this.labelKelembaban18.TabIndex = 1;
+            this.labelKelembaban18.Text = "Kelembaban Udara Pukul 18.00";
+            this.labelKelembaban18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxKelembaban18
             // 
@@ -512,6 +519,7 @@ namespace BMKG_DataSafe_2
             this.textBoxKelembaban18.Size = new System.Drawing.Size(226, 21);
             this.textBoxKelembaban18.TabIndex = 0;
             this.textBoxKelembaban18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxKelembaban18.TextChanged += new System.EventHandler(this.textBoxKelembaban18_TextChanged);
             // 
             // pictureBox7
             // 
@@ -525,7 +533,7 @@ namespace BMKG_DataSafe_2
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.labelSuhuMin);
             this.panel7.Controls.Add(this.textBoxSuhuMin);
             this.panel7.Controls.Add(this.pictureBox6);
             this.panel7.Location = new System.Drawing.Point(29, 435);
@@ -533,17 +541,17 @@ namespace BMKG_DataSafe_2
             this.panel7.Size = new System.Drawing.Size(315, 69);
             this.panel7.TabIndex = 23;
             // 
-            // label7
+            // labelSuhuMin
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label7.Location = new System.Drawing.Point(65, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Suhu Udara Minimum";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSuhuMin.AutoSize = true;
+            this.labelSuhuMin.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSuhuMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelSuhuMin.Location = new System.Drawing.Point(65, 3);
+            this.labelSuhuMin.Name = "labelSuhuMin";
+            this.labelSuhuMin.Size = new System.Drawing.Size(162, 20);
+            this.labelSuhuMin.TabIndex = 1;
+            this.labelSuhuMin.Text = "Suhu Udara Minimum";
+            this.labelSuhuMin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxSuhuMin
             // 
@@ -554,6 +562,7 @@ namespace BMKG_DataSafe_2
             this.textBoxSuhuMin.Size = new System.Drawing.Size(226, 21);
             this.textBoxSuhuMin.TabIndex = 0;
             this.textBoxSuhuMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxSuhuMin.TextChanged += new System.EventHandler(this.textBoxSuhuMin_TextChanged);
             // 
             // pictureBox6
             // 
@@ -567,7 +576,7 @@ namespace BMKG_DataSafe_2
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel9.Controls.Add(this.label9);
+            this.panel9.Controls.Add(this.labelKelembaban13);
             this.panel9.Controls.Add(this.textBoxKelembaban13);
             this.panel9.Controls.Add(this.pictureBox8);
             this.panel9.Location = new System.Drawing.Point(367, 435);
@@ -575,17 +584,17 @@ namespace BMKG_DataSafe_2
             this.panel9.Size = new System.Drawing.Size(315, 69);
             this.panel9.TabIndex = 26;
             // 
-            // label9
+            // labelKelembaban13
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label9.Location = new System.Drawing.Point(28, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(235, 20);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Kelembaban Udara Pukul 13.00";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelKelembaban13.AutoSize = true;
+            this.labelKelembaban13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKelembaban13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelKelembaban13.Location = new System.Drawing.Point(28, 3);
+            this.labelKelembaban13.Name = "labelKelembaban13";
+            this.labelKelembaban13.Size = new System.Drawing.Size(235, 20);
+            this.labelKelembaban13.TabIndex = 1;
+            this.labelKelembaban13.Text = "Kelembaban Udara Pukul 13.00";
+            this.labelKelembaban13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxKelembaban13
             // 
@@ -596,6 +605,7 @@ namespace BMKG_DataSafe_2
             this.textBoxKelembaban13.Size = new System.Drawing.Size(226, 21);
             this.textBoxKelembaban13.TabIndex = 0;
             this.textBoxKelembaban13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxKelembaban13.TextChanged += new System.EventHandler(this.textBoxKelembaban13_TextChanged);
             // 
             // pictureBox8
             // 
@@ -609,7 +619,7 @@ namespace BMKG_DataSafe_2
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel6.Controls.Add(this.label5);
+            this.panel6.Controls.Add(this.labelSuhuMax);
             this.panel6.Controls.Add(this.textBoxSuhuMax);
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Location = new System.Drawing.Point(29, 360);
@@ -617,17 +627,17 @@ namespace BMKG_DataSafe_2
             this.panel6.Size = new System.Drawing.Size(315, 69);
             this.panel6.TabIndex = 23;
             // 
-            // label5
+            // labelSuhuMax
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label5.Location = new System.Drawing.Point(65, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(174, 20);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Suhu Udara Maksimum";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSuhuMax.AutoSize = true;
+            this.labelSuhuMax.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSuhuMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelSuhuMax.Location = new System.Drawing.Point(65, 3);
+            this.labelSuhuMax.Name = "labelSuhuMax";
+            this.labelSuhuMax.Size = new System.Drawing.Size(174, 20);
+            this.labelSuhuMax.TabIndex = 1;
+            this.labelSuhuMax.Text = "Suhu Udara Maksimum";
+            this.labelSuhuMax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxSuhuMax
             // 
@@ -638,6 +648,7 @@ namespace BMKG_DataSafe_2
             this.textBoxSuhuMax.Size = new System.Drawing.Size(226, 21);
             this.textBoxSuhuMax.TabIndex = 0;
             this.textBoxSuhuMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxSuhuMax.TextChanged += new System.EventHandler(this.textBoxSuhuMax_TextChanged);
             // 
             // pictureBox5
             // 
@@ -651,7 +662,7 @@ namespace BMKG_DataSafe_2
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel10.Controls.Add(this.label10);
+            this.panel10.Controls.Add(this.labelKelembaban07);
             this.panel10.Controls.Add(this.textBoxKelembaban07);
             this.panel10.Controls.Add(this.pictureBox9);
             this.panel10.Location = new System.Drawing.Point(367, 360);
@@ -659,17 +670,17 @@ namespace BMKG_DataSafe_2
             this.panel10.Size = new System.Drawing.Size(315, 69);
             this.panel10.TabIndex = 27;
             // 
-            // label10
+            // labelKelembaban07
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label10.Location = new System.Drawing.Point(28, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(235, 20);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Kelembaban Udara Pukul 07.00";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelKelembaban07.AutoSize = true;
+            this.labelKelembaban07.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKelembaban07.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelKelembaban07.Location = new System.Drawing.Point(28, 3);
+            this.labelKelembaban07.Name = "labelKelembaban07";
+            this.labelKelembaban07.Size = new System.Drawing.Size(235, 20);
+            this.labelKelembaban07.TabIndex = 1;
+            this.labelKelembaban07.Text = "Kelembaban Udara Pukul 07.00";
+            this.labelKelembaban07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxKelembaban07
             // 
@@ -680,6 +691,7 @@ namespace BMKG_DataSafe_2
             this.textBoxKelembaban07.Size = new System.Drawing.Size(226, 21);
             this.textBoxKelembaban07.TabIndex = 0;
             this.textBoxKelembaban07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxKelembaban07.TextChanged += new System.EventHandler(this.textBoxKelembaban07_TextChanged);
             // 
             // pictureBox9
             // 
@@ -693,7 +705,7 @@ namespace BMKG_DataSafe_2
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.labelSuhuRata);
             this.panel5.Controls.Add(this.textBoxSuhuRata);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Location = new System.Drawing.Point(29, 285);
@@ -701,17 +713,17 @@ namespace BMKG_DataSafe_2
             this.panel5.Size = new System.Drawing.Size(315, 69);
             this.panel5.TabIndex = 23;
             // 
-            // label4
+            // labelSuhuRata
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label4.Location = new System.Drawing.Point(62, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Suhu Udara Rata - Rata";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSuhuRata.AutoSize = true;
+            this.labelSuhuRata.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSuhuRata.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelSuhuRata.Location = new System.Drawing.Point(62, 3);
+            this.labelSuhuRata.Name = "labelSuhuRata";
+            this.labelSuhuRata.Size = new System.Drawing.Size(178, 20);
+            this.labelSuhuRata.TabIndex = 1;
+            this.labelSuhuRata.Text = "Suhu Udara Rata - Rata";
+            this.labelSuhuRata.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxSuhuRata
             // 
@@ -722,6 +734,7 @@ namespace BMKG_DataSafe_2
             this.textBoxSuhuRata.Size = new System.Drawing.Size(226, 21);
             this.textBoxSuhuRata.TabIndex = 0;
             this.textBoxSuhuRata.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxSuhuRata.TextChanged += new System.EventHandler(this.textBoxSuhuRata_TextChanged);
             // 
             // pictureBox4
             // 
@@ -735,7 +748,7 @@ namespace BMKG_DataSafe_2
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel11.Controls.Add(this.label11);
+            this.panel11.Controls.Add(this.labelTekanan);
             this.panel11.Controls.Add(this.textBoxTekanan);
             this.panel11.Controls.Add(this.pictureBox10);
             this.panel11.Location = new System.Drawing.Point(367, 285);
@@ -743,17 +756,17 @@ namespace BMKG_DataSafe_2
             this.panel11.Size = new System.Drawing.Size(315, 69);
             this.panel11.TabIndex = 28;
             // 
-            // label11
+            // labelTekanan
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label11.Location = new System.Drawing.Point(88, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 20);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Tekanan Udara";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTekanan.AutoSize = true;
+            this.labelTekanan.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTekanan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelTekanan.Location = new System.Drawing.Point(88, 3);
+            this.labelTekanan.Name = "labelTekanan";
+            this.labelTekanan.Size = new System.Drawing.Size(120, 20);
+            this.labelTekanan.TabIndex = 1;
+            this.labelTekanan.Text = "Tekanan Udara";
+            this.labelTekanan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxTekanan
             // 
@@ -764,6 +777,7 @@ namespace BMKG_DataSafe_2
             this.textBoxTekanan.Size = new System.Drawing.Size(226, 21);
             this.textBoxTekanan.TabIndex = 0;
             this.textBoxTekanan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxTekanan.TextChanged += new System.EventHandler(this.textBoxTekanan_TextChanged);
             // 
             // pictureBox10
             // 
@@ -777,7 +791,7 @@ namespace BMKG_DataSafe_2
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.labelSuhu18);
             this.panel4.Controls.Add(this.textBoxSuhu18);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(29, 210);
@@ -785,17 +799,17 @@ namespace BMKG_DataSafe_2
             this.panel4.Size = new System.Drawing.Size(315, 69);
             this.panel4.TabIndex = 23;
             // 
-            // label3
+            // labelSuhu18
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.Location = new System.Drawing.Point(64, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Suhu Udara Pukul 18.00";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSuhu18.AutoSize = true;
+            this.labelSuhu18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSuhu18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelSuhu18.Location = new System.Drawing.Point(64, 3);
+            this.labelSuhu18.Name = "labelSuhu18";
+            this.labelSuhu18.Size = new System.Drawing.Size(175, 20);
+            this.labelSuhu18.TabIndex = 1;
+            this.labelSuhu18.Text = "Suhu Udara Pukul 18.00";
+            this.labelSuhu18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxSuhu18
             // 
@@ -806,6 +820,7 @@ namespace BMKG_DataSafe_2
             this.textBoxSuhu18.Size = new System.Drawing.Size(226, 21);
             this.textBoxSuhu18.TabIndex = 0;
             this.textBoxSuhu18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxSuhu18.TextChanged += new System.EventHandler(this.textBoxSuhu18_TextChanged);
             // 
             // pictureBox3
             // 
@@ -819,7 +834,7 @@ namespace BMKG_DataSafe_2
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel12.Controls.Add(this.label12);
+            this.panel12.Controls.Add(this.labelCuacaKhusus);
             this.panel12.Controls.Add(this.textBoxCuacaKhusus);
             this.panel12.Controls.Add(this.pictureBox11);
             this.panel12.Location = new System.Drawing.Point(367, 210);
@@ -827,17 +842,17 @@ namespace BMKG_DataSafe_2
             this.panel12.Size = new System.Drawing.Size(315, 69);
             this.panel12.TabIndex = 29;
             // 
-            // label12
+            // labelCuacaKhusus
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label12.Location = new System.Drawing.Point(60, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(181, 20);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Peristiwa Cuaca Khusus";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCuacaKhusus.AutoSize = true;
+            this.labelCuacaKhusus.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCuacaKhusus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelCuacaKhusus.Location = new System.Drawing.Point(60, 3);
+            this.labelCuacaKhusus.Name = "labelCuacaKhusus";
+            this.labelCuacaKhusus.Size = new System.Drawing.Size(181, 20);
+            this.labelCuacaKhusus.TabIndex = 1;
+            this.labelCuacaKhusus.Text = "Peristiwa Cuaca Khusus";
+            this.labelCuacaKhusus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxCuacaKhusus
             // 
@@ -848,6 +863,7 @@ namespace BMKG_DataSafe_2
             this.textBoxCuacaKhusus.Size = new System.Drawing.Size(226, 21);
             this.textBoxCuacaKhusus.TabIndex = 0;
             this.textBoxCuacaKhusus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxCuacaKhusus.TextChanged += new System.EventHandler(this.textBoxCuacaKhusus_TextChanged);
             // 
             // pictureBox11
             // 
@@ -861,7 +877,7 @@ namespace BMKG_DataSafe_2
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.labelSuhu13);
             this.panel3.Controls.Add(this.textBoxSuhu13);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(29, 135);
@@ -869,17 +885,17 @@ namespace BMKG_DataSafe_2
             this.panel3.Size = new System.Drawing.Size(315, 69);
             this.panel3.TabIndex = 23;
             // 
-            // label2
+            // labelSuhu13
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.Location = new System.Drawing.Point(64, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Suhu Udara Pukul 13.00";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSuhu13.AutoSize = true;
+            this.labelSuhu13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSuhu13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelSuhu13.Location = new System.Drawing.Point(64, 3);
+            this.labelSuhu13.Name = "labelSuhu13";
+            this.labelSuhu13.Size = new System.Drawing.Size(175, 20);
+            this.labelSuhu13.TabIndex = 1;
+            this.labelSuhu13.Text = "Suhu Udara Pukul 13.00";
+            this.labelSuhu13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxSuhu13
             // 
@@ -890,6 +906,7 @@ namespace BMKG_DataSafe_2
             this.textBoxSuhu13.Size = new System.Drawing.Size(226, 21);
             this.textBoxSuhu13.TabIndex = 0;
             this.textBoxSuhu13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxSuhu13.TextChanged += new System.EventHandler(this.textBoxSuhu13_TextChanged);
             // 
             // pictureBox2
             // 
@@ -903,7 +920,7 @@ namespace BMKG_DataSafe_2
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel13.Controls.Add(this.label13);
+            this.panel13.Controls.Add(this.labelCurahHujan);
             this.panel13.Controls.Add(this.textBoxHujan);
             this.panel13.Controls.Add(this.pictureBox12);
             this.panel13.Location = new System.Drawing.Point(367, 60);
@@ -911,17 +928,17 @@ namespace BMKG_DataSafe_2
             this.panel13.Size = new System.Drawing.Size(315, 69);
             this.panel13.TabIndex = 24;
             // 
-            // label13
+            // labelCurahHujan
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label13.Location = new System.Drawing.Point(71, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(150, 20);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Curah Hujan Harian";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCurahHujan.AutoSize = true;
+            this.labelCurahHujan.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCurahHujan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelCurahHujan.Location = new System.Drawing.Point(71, 3);
+            this.labelCurahHujan.Name = "labelCurahHujan";
+            this.labelCurahHujan.Size = new System.Drawing.Size(150, 20);
+            this.labelCurahHujan.TabIndex = 1;
+            this.labelCurahHujan.Text = "Curah Hujan Harian";
+            this.labelCurahHujan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxHujan
             // 
@@ -932,6 +949,7 @@ namespace BMKG_DataSafe_2
             this.textBoxHujan.Size = new System.Drawing.Size(226, 21);
             this.textBoxHujan.TabIndex = 0;
             this.textBoxHujan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxHujan.TextChanged += new System.EventHandler(this.textBoxHujan_TextChanged);
             // 
             // pictureBox12
             // 
@@ -945,7 +963,7 @@ namespace BMKG_DataSafe_2
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.labelSuhu07);
             this.panel2.Controls.Add(this.textBoxSuhu07);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(29, 60);
@@ -953,17 +971,17 @@ namespace BMKG_DataSafe_2
             this.panel2.Size = new System.Drawing.Size(315, 69);
             this.panel2.TabIndex = 22;
             // 
-            // label6
+            // labelSuhu07
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label6.Location = new System.Drawing.Point(65, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 20);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Suhu Udara Pukul 07.00";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSuhu07.AutoSize = true;
+            this.labelSuhu07.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSuhu07.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelSuhu07.Location = new System.Drawing.Point(65, 3);
+            this.labelSuhu07.Name = "labelSuhu07";
+            this.labelSuhu07.Size = new System.Drawing.Size(175, 20);
+            this.labelSuhu07.TabIndex = 1;
+            this.labelSuhu07.Text = "Suhu Udara Pukul 07.00";
+            this.labelSuhu07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxSuhu07
             // 
@@ -974,6 +992,7 @@ namespace BMKG_DataSafe_2
             this.textBoxSuhu07.Size = new System.Drawing.Size(226, 21);
             this.textBoxSuhu07.TabIndex = 0;
             this.textBoxSuhu07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxSuhu07.TextChanged += new System.EventHandler(this.textBoxSuhu07_TextChanged);
             // 
             // pictureBox1
             // 
@@ -1059,76 +1078,76 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelSuhu07;
         private System.Windows.Forms.TextBox textBoxSuhu07;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label labelArahMax;
         private System.Windows.Forms.TextBox textBoxArahMax;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label labelAnginMax;
         private System.Windows.Forms.TextBox textBoxKecepatanMax;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label labelMatahari;
         private System.Windows.Forms.TextBox textBoxMatahari;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label labelArahAngin;
         private System.Windows.Forms.TextBox textBoxArahAngin;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label labelAnginRata;
         private System.Windows.Forms.TextBox textBoxKecepatanAnginRata;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label labelKelembabanRata;
         private System.Windows.Forms.TextBox textBoxKelembabanRata;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelKelembaban18;
         private System.Windows.Forms.TextBox textBoxKelembaban18;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelSuhuMin;
         private System.Windows.Forms.TextBox textBoxSuhuMin;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelKelembaban13;
         private System.Windows.Forms.TextBox textBoxKelembaban13;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelSuhuMax;
         private System.Windows.Forms.TextBox textBoxSuhuMax;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelKelembaban07;
         private System.Windows.Forms.TextBox textBoxKelembaban07;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelSuhuRata;
         private System.Windows.Forms.TextBox textBoxSuhuRata;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label labelTekanan;
         private System.Windows.Forms.TextBox textBoxTekanan;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelSuhu18;
         private System.Windows.Forms.TextBox textBoxSuhu18;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label labelCuacaKhusus;
         private System.Windows.Forms.TextBox textBoxCuacaKhusus;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelSuhu13;
         private System.Windows.Forms.TextBox textBoxSuhu13;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label labelCurahHujan;
         private System.Windows.Forms.TextBox textBoxHujan;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button buttonEncrypt;

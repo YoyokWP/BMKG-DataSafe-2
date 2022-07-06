@@ -16,5 +16,32 @@ namespace BMKG_DataSafe_2
         {
             InitializeComponent();
         }
+
+        private void textBoxUsername_TextChanged(object sender, EventArgs e)
+        {
+            labelUsername.Hide();
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+            labelPassword.Hide();
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            string UserId, Password;
+            UserId = textBoxUsername.Text;
+            Password = textBoxPassword.Text;
+            if (UserId == "admin" && Password == "admin")
+            {
+                FormMainAdmin formMainAdmin = new FormMainAdmin();
+                formMainAdmin.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Masukkan ID dengan benar");
+            }
+        }
     }
 }

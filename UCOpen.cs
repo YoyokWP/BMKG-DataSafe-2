@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace BMKG_DataSafe_2
 {
@@ -23,13 +24,15 @@ namespace BMKG_DataSafe_2
             int nRightRect,
             int nBottomRect,
             int nWidthEllipse,
-            int nHeightEllipse
+            int nHeightEllipse1
         );
 
         public UCOpen()
         {
             InitializeComponent();
         }
+
+        DataTable dt = new DataTable();
 
         private void UCOpen_Load(object sender, EventArgs e)
         {
@@ -56,6 +59,27 @@ namespace BMKG_DataSafe_2
                 comboBox1.Items.Add(dataset.Tables[0].Rows[i][0].ToString());
                 con3.Close();
             }
+
+            dt.Columns.AddRange(new DataColumn[19] { new DataColumn("Tanggal", typeof(string)),
+                new DataColumn("Suhu 07.00", typeof(int)),
+                new DataColumn("Suhu 13.00", typeof(int)),
+                new DataColumn("Suhu 14.00", typeof(int)),
+                new DataColumn("Suhu 15.00", typeof(int)),
+                new DataColumn("Suhu 16.00", typeof(int)),
+                new DataColumn("Suhu 17.00", typeof(int)),
+                new DataColumn("Suhu 18.00", typeof(int)),
+                new DataColumn("Suhu 19.00", typeof(int)),
+                new DataColumn("Suhu 10.00", typeof(int)),
+                new DataColumn("Suhu 13.10", typeof(int)),
+                new DataColumn("Suhu 13.20", typeof(int)),
+                new DataColumn("Suhu 13.30", typeof(int)),
+                new DataColumn("Suhu 13.40", typeof(int)),
+                new DataColumn("Suhu 13.50", typeof(int)),
+                new DataColumn("Suhu 13.60", typeof(int)),
+                new DataColumn("Suhu 13.70", typeof(int)),
+                new DataColumn("Suhu 13.80", typeof(int)),
+                new DataColumn("Suhu 13.90", typeof(int)),
+            });
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -88,10 +112,10 @@ namespace BMKG_DataSafe_2
             FillDataGridView();
         }
 
-        DataTable dt = new DataTable();
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            clearTextBox();
+
             int[] w = { 2, 7, 11, 21, 42, 89, 180, 354 };
             int q = 881;
             int r = 588;
@@ -139,6 +163,8 @@ namespace BMKG_DataSafe_2
             int[] encodeConvert17 = encoded17.Split(' ').Select(n => Convert.ToInt32(n)).ToArray();
             int[] encodeConvert18 = encoded18.Split(' ').Select(n => Convert.ToInt32(n)).ToArray();
 
+            //int tanggal1 = Int32.Parse(tanggal);
+            //string output = Regex.Replace(input, @"[^\u0009\u000A\u000D\u0020-\u007E]", "*");
             string decoded1 = Decrypt1(encodeConvert1, w, q, r);
             string decoded2 = Decrypt2(encodeConvert2, w, q, r);
             string decoded3 = Decrypt3(encodeConvert3, w, q, r);
@@ -158,31 +184,34 @@ namespace BMKG_DataSafe_2
             string decoded17 = Decrypt17(encodeConvert17, w, q, r);
             string decoded18 = Decrypt18(encodeConvert18, w, q, r);
 
-            dt.Rows.Add(tanggal, decoded1, decoded2, decoded3, decoded4, decoded5, decoded6, decoded7, decoded8, decoded9, decoded10, decoded11, decoded12, decoded13, decoded14, decoded15, decoded16, decoded17, decoded18);
-            this.dataGridView2.DataSource = dt;
+            //int decod = Int32.Parse(decoded1);
 
-            dt.Columns.AddRange(new DataColumn[19]
-            {
-                new DataColumn("Tanggal", typeof(string)),
-                new DataColumn("Suhu 07.00", typeof(int)),
-                new DataColumn("Suhu 13.00", typeof(int)),
-                new DataColumn("Suhu 14.00", typeof(int)),
-                new DataColumn("Suhu 15.00", typeof(int)),
-                new DataColumn("Suhu 16.00", typeof(int)),
-                new DataColumn("Suhu 17.00", typeof(int)),
-                new DataColumn("Suhu 18.00", typeof(int)),
-                new DataColumn("Suhu 19.00", typeof(int)),
-                new DataColumn("Suhu 10.00", typeof(int)),
-                new DataColumn("Suhu 13.10", typeof(int)),
-                new DataColumn("Suhu 13.20", typeof(int)),
-                new DataColumn("Suhu 13.30", typeof(int)),
-                new DataColumn("Suhu 13.40", typeof(int)),
-                new DataColumn("Suhu 13.50", typeof(int)),
-                new DataColumn("Suhu 13.60", typeof(int)),
-                new DataColumn("Suhu 13.70", typeof(int)),
-                new DataColumn("Suhu 13.80", typeof(int)),
-                new DataColumn("Suhu 13.90", typeof(int)),
-            });
+            //float value = float.Parse(mystring, CultureInfo.InvariantCulture.NumberFormat);
+
+            //float decod1 = float.Parse(decoded1, CultureInfo.InvariantCulture.NumberFormat);
+
+            //dt.Rows.Add(tanggal, decoded1); // decoded2, decoded3, decoded4, decoded5, decoded6, decoded7, decoded8, decoded9, decoded10, decoded11, decoded12, decoded13, decoded14, decoded15, decoded16, decoded17, decoded18);
+            //this.dataGridView2.DataSource = dt;
+
+            labelTanggal.Text = tanggal;
+            textBox1.Text = decoded1;
+            textBox2.Text = decoded2;
+            textBox3.Text = decoded3;
+            textBox4.Text = decoded4;
+            textBox5.Text = decoded5;
+            textBox6.Text = decoded6;
+            textBox7.Text = decoded7;
+            textBox8.Text = decoded8;
+            textBox9.Text = decoded9;
+            textBox10.Text = decoded10;
+            textBox11.Text = decoded11;
+            textBox12.Text = decoded12;
+            textBox13.Text = decoded13;
+            textBox14.Text = decoded14;
+            textBox15.Text = decoded15;
+            textBox16.Text = decoded16;
+            textBox17.Text = decoded17;
+            textBox18.Text = decoded18;
         }
 
         private void buttonDecrypt_Click(object sender, EventArgs e)
@@ -192,6 +221,7 @@ namespace BMKG_DataSafe_2
             //int r = 588;
 
             //string decoded = Decrypt1(encoded1, w, q, r);
+
         }
 
         #region Dekripsi
@@ -957,6 +987,39 @@ namespace BMKG_DataSafe_2
             v %= q;
             if (v < 0) v = (v + q) % q;
             return v;
+        }
+
+        void clearTextBox()
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
+            textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox15.Clear();
+            textBox16.Clear();
+            textBox17.Clear();
+            textBox18.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //dt.Rows.Add(tanggal, decoded1); // decoded2, decoded3, decoded4, decoded5, decoded6, decoded7, decoded8, decoded9, decoded10, decoded11, decoded12, decoded13, decoded14, decoded15, decoded16, decoded17, decoded18);
+            //this.dataGridView2.DataSource = dt;
+
+           
+
+            dt.Rows.Add(labelTanggal.Text, textBox1.Text);
+            this.dataGridView2.DataSource = dt;
         }
     }
 }

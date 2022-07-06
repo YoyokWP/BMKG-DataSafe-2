@@ -76,7 +76,6 @@ namespace BMKG_DataSafe_2
                 comboBox1.Items.Add(dataset.Tables[0].Rows[i][0].ToString());
                 con3.Close();
             }
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -466,6 +465,98 @@ namespace BMKG_DataSafe_2
             int[] beta = new int[w.Length];
             for (int i = 0; i < w.Length; i++) beta[i] = w[i] * r % q;
             return beta;
+        }
+        #endregion
+
+        #region Warna Label
+        private void textBoxSuhu07_TextChanged(object sender, EventArgs e)
+        {
+            labelSuhu07.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxSuhu13_TextChanged(object sender, EventArgs e)
+        {
+            labelSuhu13.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxSuhu18_TextChanged(object sender, EventArgs e)
+        {
+            labelSuhu18.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxSuhuRata_TextChanged(object sender, EventArgs e)
+        {
+            labelSuhuRata.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxSuhuMax_TextChanged(object sender, EventArgs e)
+        {
+            labelSuhuMax.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxSuhuMin_TextChanged(object sender, EventArgs e)
+        {
+            labelSuhuMin.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxHujan_TextChanged(object sender, EventArgs e)
+        {
+            labelCurahHujan.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxMatahari_TextChanged(object sender, EventArgs e)
+        {
+            labelMatahari.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxCuacaKhusus_TextChanged(object sender, EventArgs e)
+        {
+            labelCuacaKhusus.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxTekanan_TextChanged(object sender, EventArgs e)
+        {
+            labelTekanan.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxKelembaban07_TextChanged(object sender, EventArgs e)
+        {
+            labelKelembaban07.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxKelembaban13_TextChanged(object sender, EventArgs e)
+        {
+            labelKelembaban13.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxKelembaban18_TextChanged(object sender, EventArgs e)
+        {
+            labelKelembaban18.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxKelembabanRata_TextChanged(object sender, EventArgs e)
+        {
+            labelKelembabanRata.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxKecepatanAnginRata_TextChanged(object sender, EventArgs e)
+        {
+            labelAnginRata.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxArahAngin_TextChanged(object sender, EventArgs e)
+        {
+            labelArahAngin.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxKecepatanMax_TextChanged(object sender, EventArgs e)
+        {
+            labelAnginMax.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
+        }
+
+        private void textBoxArahMax_TextChanged(object sender, EventArgs e)
+        {
+            labelArahMax.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
         }
         #endregion
     }

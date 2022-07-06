@@ -66,7 +66,7 @@ namespace BMKG_DataSafe_2
             // 
             this.lblStasiun.AutoSize = true;
             this.lblStasiun.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStasiun.ForeColor = System.Drawing.Color.White;
+            this.lblStasiun.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
             this.lblStasiun.Location = new System.Drawing.Point(20, 11);
             this.lblStasiun.Name = "lblStasiun";
             this.lblStasiun.Size = new System.Drawing.Size(73, 22);
@@ -77,7 +77,7 @@ namespace BMKG_DataSafe_2
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(20, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 19);
@@ -88,7 +88,7 @@ namespace BMKG_DataSafe_2
             // 
             this.lblLatitude.AutoSize = true;
             this.lblLatitude.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLatitude.ForeColor = System.Drawing.Color.Gray;
+            this.lblLatitude.ForeColor = System.Drawing.Color.White;
             this.lblLatitude.Location = new System.Drawing.Point(214, 54);
             this.lblLatitude.Name = "lblLatitude";
             this.lblLatitude.Size = new System.Drawing.Size(64, 19);
@@ -99,7 +99,7 @@ namespace BMKG_DataSafe_2
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(459, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 19);
@@ -110,7 +110,7 @@ namespace BMKG_DataSafe_2
             // 
             this.lblWmoid.AutoSize = true;
             this.lblWmoid.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWmoid.ForeColor = System.Drawing.Color.White;
+            this.lblWmoid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
             this.lblWmoid.Location = new System.Drawing.Point(20, 80);
             this.lblWmoid.Name = "lblWmoid";
             this.lblWmoid.Size = new System.Drawing.Size(66, 20);
@@ -121,7 +121,7 @@ namespace BMKG_DataSafe_2
             // 
             this.lblLat.AutoSize = true;
             this.lblLat.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLat.ForeColor = System.Drawing.Color.White;
+            this.lblLat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
             this.lblLat.Location = new System.Drawing.Point(214, 80);
             this.lblLat.Name = "lblLat";
             this.lblLat.Size = new System.Drawing.Size(68, 20);
@@ -132,7 +132,7 @@ namespace BMKG_DataSafe_2
             // 
             this.lblLong.AutoSize = true;
             this.lblLong.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLong.ForeColor = System.Drawing.Color.White;
+            this.lblLong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
             this.lblLong.Location = new System.Drawing.Point(459, 80);
             this.lblLong.Name = "lblLong";
             this.lblLong.Size = new System.Drawing.Size(82, 20);
@@ -143,7 +143,7 @@ namespace BMKG_DataSafe_2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(891, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 19);
@@ -155,7 +155,7 @@ namespace BMKG_DataSafe_2
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(65)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
             this.textBox1.Location = new System.Drawing.Point(807, 56);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(277, 19);
