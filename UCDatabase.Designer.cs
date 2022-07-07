@@ -1,7 +1,7 @@
 ﻿
 namespace BMKG_DataSafe_2
 {
-    partial class UCDatabaseStatus
+    partial class UCDatabase
     {
         /// <summary> 
         /// Required designer variable.

@@ -47,6 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassAlgoritma.cs" />
+    <Compile Include="datastasiunDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datastasiunDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="datauserDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datauserDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +107,23 @@
     <Compile Include="UCAccount.Designer.cs">
       <DependentUpon>UCAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDatabase.Designer.cs">
+      <DependentUpon>UCDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCEntry.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UCEntry.Designer.cs">
       <DependentUpon>UCEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCFKLIM71Data.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFKLIM71Data.Designer.cs">
+      <DependentUpon>UCFKLIM71Data.cs</DependentUpon>
     </Compile>
     <Compile Include="UCOpen.cs">
       <SubType>UserControl</SubType>
@@ -114,6 +136,18 @@
     </Compile>
     <Compile Include="UCStasiun.Designer.cs">
       <DependentUpon>UCStasiun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStationData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStationData.Designer.cs">
+      <DependentUpon>UCStationData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUserData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUserData.Designer.cs">
+      <DependentUpon>UCUserData.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -157,6 +191,34 @@
     <EmbeddedResource Include="UCStasiun.resx">
       <DependentUpon>UCStasiun.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCStationData.resx">
+      <DependentUpon>UCStationData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUserData.resx">
+      <DependentUpon>UCUserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="datastasiunDataSet.xsc">
+      <DependentUpon>datastasiunDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datastasiunDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datastasiunDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datastasiunDataSet.xss">
+      <DependentUpon>datastasiunDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datauserDataSet.xsc">
+      <DependentUpon>datauserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datauserDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datauserDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datauserDataSet.xss">
+      <DependentUpon>datauserDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

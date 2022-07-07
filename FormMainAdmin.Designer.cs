@@ -82,6 +82,7 @@ namespace BMKG_DataSafe_2
             this.btnClose1.Size = new System.Drawing.Size(35, 35);
             this.btnClose1.TabIndex = 5;
             this.btnClose1.UseVisualStyleBackColor = false;
+            this.btnClose1.Click += new System.EventHandler(this.btnClose1_Click);
             // 
             // panelControl
             // 
@@ -286,6 +287,7 @@ namespace BMKG_DataSafe_2
             // 
             // panelMain
             // 
+            this.panelMain.AutoScroll = true;
             this.panelMain.Location = new System.Drawing.Point(321, 84);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1119, 714);

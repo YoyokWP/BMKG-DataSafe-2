@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BMKG_DataSafe_2
 {
-    public partial class UCDatabaseStatus : UserControl
+    public partial class UCDatabase : UserControl
     {
-        public UCDatabaseStatus()
+        public UCDatabase()
         {
             InitializeComponent();
         }

@@ -25,11 +25,16 @@ namespace BMKG_DataSafe_2
 
         private void FormMainAdmin_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnStation_Click(object sender, EventArgs e)
         {
+            UCStationData ucDtastionData = new UCStationData();
+
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(ucDtastionData);
+
             #region Tampilan tombol
             pictureBoxStation.Show();
             pictureBoxUserData.Hide();
@@ -53,6 +58,11 @@ namespace BMKG_DataSafe_2
 
         private void btnUserData_Click(object sender, EventArgs e)
         {
+            UCUserData ucUserData = new UCUserData();
+
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(ucUserData);
+
             #region Tampilan tombol
             pictureBoxStation.Hide();
             pictureBoxUserData.Show();
@@ -76,6 +86,11 @@ namespace BMKG_DataSafe_2
 
         private void btnFklim71Data_Click(object sender, EventArgs e)
         {
+            UCFKLIM71Data ucDataFKLIM71 = new UCFKLIM71Data();
+
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(ucDataFKLIM71);
+
             #region Tampilan tombol
             pictureBoxStation.Hide();
             pictureBoxUserData.Hide();
@@ -99,6 +114,11 @@ namespace BMKG_DataSafe_2
 
         private void btnDatabase_Click(object sender, EventArgs e)
         {
+            UCDatabase ucDatabase = new UCDatabase();
+
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(ucDatabase);
+
             #region Tampilan tombol
             pictureBoxStation.Hide();
             pictureBoxUserData.Hide();
@@ -122,6 +142,11 @@ namespace BMKG_DataSafe_2
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
+            UCAbout ucAbout = new UCAbout();
+
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(ucAbout);
+
             #region Tampilan tombol
             pictureBoxStation.Hide();
             pictureBoxUserData.Hide();
@@ -141,6 +166,11 @@ namespace BMKG_DataSafe_2
             btnDatabase.BackColor = System.Drawing.Color.FromArgb(34, 40, 49);
             btnAbout.BackColor = System.Drawing.Color.FromArgb(29, 35, 44);
             #endregion
+        }
+
+        private void btnClose1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
