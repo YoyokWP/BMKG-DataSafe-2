@@ -39,8 +39,8 @@ namespace BMKG_DataSafe_2
 
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=datastasiun;Integrated Security=True");
-                string sql = "select * from tabelstasiun";
+                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=Stasiun;Integrated Security=True");
+                string sql = "select * from Daftar_Stasiun";
                 SqlCommand s = new SqlCommand(sql, con);
                 con.Open();
                 SqlDataReader r = s.ExecuteReader();
@@ -49,13 +49,13 @@ namespace BMKG_DataSafe_2
 
                 while (r.Read())
                 {
-                    int id = int.Parse(r[0] + "");
-                    string stasiun = "" + r[1];
-                    int wmoid = int.Parse(r[2] + "");
-                    string latitude = "" + r[3];
-                    string longitude = "" + r[4];
+                    //int id = int.Parse(r[0] + "");
+                    string stasiun = "" + r[0];
+                    int wmoid = int.Parse(r[1] + "");
+                    string latitude = "" + r[2];
+                    string longitude = "" + r[3];
 
-                    UCStasiun ucstasiun = new UCStasiun(id, stasiun, wmoid, latitude, longitude);
+                    UCStasiun ucstasiun = new UCStasiun(stasiun, wmoid, latitude, longitude);
 
                     if (flowLayoutPanel1.Controls.Count < 0)
                     {

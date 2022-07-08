@@ -193,7 +193,9 @@ namespace BMKG_DataSafe_2
             //dt.Rows.Add(tanggal, decoded1); // decoded2, decoded3, decoded4, decoded5, decoded6, decoded7, decoded8, decoded9, decoded10, decoded11, decoded12, decoded13, decoded14, decoded15, decoded16, decoded17, decoded18);
             //this.dataGridView2.DataSource = dt;
 
-            labelTanggal.Text = tanggal;
+            string tanggalx = tanggal.Remove(11);
+
+            labelTanggal.Text = tanggalx;
             textBox1.Text = decoded1;
             textBox2.Text = decoded2;
             textBox3.Text = decoded3;
@@ -1016,10 +1018,9 @@ namespace BMKG_DataSafe_2
             //dt.Rows.Add(tanggal, decoded1); // decoded2, decoded3, decoded4, decoded5, decoded6, decoded7, decoded8, decoded9, decoded10, decoded11, decoded12, decoded13, decoded14, decoded15, decoded16, decoded17, decoded18);
             //this.dataGridView2.DataSource = dt;
 
-           
-
-            dt.Rows.Add(labelTanggal.Text, textBox1.Text);
-            this.dataGridView2.DataSource = dt;
+          
+            //dt.Rows.Add(labelTanggal.Text, textBox1.Text);
+            //this.dataGridView2.DataSource = dt;
         }
     }
 }

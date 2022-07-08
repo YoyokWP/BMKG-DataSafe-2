@@ -32,7 +32,7 @@ namespace BMKG_DataSafe_2
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxJumlahStasiun = new System.Windows.Forms.TextBox();
             this.labelStationName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBoxStationName = new System.Windows.Forms.TextBox();
@@ -68,7 +68,7 @@ namespace BMKG_DataSafe_2
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(37, 259);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1016, 634);
+            this.panel1.Size = new System.Drawing.Size(1016, 431);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -82,16 +82,16 @@ namespace BMKG_DataSafe_2
             this.label2.TabIndex = 0;
             this.label2.Text = "List of Station :";
             // 
-            // textBox1
+            // textBoxJumlahStasiun
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
-            this.textBox1.Location = new System.Drawing.Point(140, 231);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(41, 22);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxJumlahStasiun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.textBoxJumlahStasiun.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxJumlahStasiun.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.textBoxJumlahStasiun.Location = new System.Drawing.Point(142, 231);
+            this.textBoxJumlahStasiun.Name = "textBoxJumlahStasiun";
+            this.textBoxJumlahStasiun.Size = new System.Drawing.Size(41, 22);
+            this.textBoxJumlahStasiun.TabIndex = 2;
+            this.textBoxJumlahStasiun.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelStationName
             // 
@@ -100,9 +100,9 @@ namespace BMKG_DataSafe_2
             this.labelStationName.ForeColor = System.Drawing.Color.White;
             this.labelStationName.Location = new System.Drawing.Point(168, 54);
             this.labelStationName.Name = "labelStationName";
-            this.labelStationName.Size = new System.Drawing.Size(112, 20);
+            this.labelStationName.Size = new System.Drawing.Size(106, 20);
             this.labelStationName.TabIndex = 18;
-            this.labelStationName.Text = "Stastion Name";
+            this.labelStationName.Text = "Station Name";
             // 
             // panel2
             // 
@@ -220,12 +220,13 @@ namespace BMKG_DataSafe_2
             // buttonAddStation
             // 
             this.buttonAddStation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddStation.Location = new System.Drawing.Point(471, 193);
+            this.buttonAddStation.Location = new System.Drawing.Point(467, 197);
             this.buttonAddStation.Name = "buttonAddStation";
             this.buttonAddStation.Size = new System.Drawing.Size(152, 28);
             this.buttonAddStation.TabIndex = 26;
             this.buttonAddStation.Text = "Add Station";
             this.buttonAddStation.UseVisualStyleBackColor = true;
+            this.buttonAddStation.Click += new System.EventHandler(this.buttonAddStation_Click);
             // 
             // UCStationData
             // 
@@ -241,12 +242,13 @@ namespace BMKG_DataSafe_2
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.labelStationName);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxJumlahStasiun);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "UCStationData";
-            this.Size = new System.Drawing.Size(1091, 913);
+            this.Size = new System.Drawing.Size(1091, 719);
+            this.Load += new System.EventHandler(this.UCStationData_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -265,7 +267,7 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxJumlahStasiun;
         private System.Windows.Forms.Label labelStationName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBoxStationName;

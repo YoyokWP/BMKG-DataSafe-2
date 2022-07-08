@@ -65,11 +65,11 @@ namespace BMKG_DataSafe_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(469, 0);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.label1.Location = new System.Drawing.Point(474, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 25);
+            this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add User Data";
             // 
@@ -151,25 +151,26 @@ namespace BMKG_DataSafe_2
             // comboBoxStation
             // 
             this.comboBoxStation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxStation.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxStation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxStation.FormattingEnabled = true;
-            this.comboBoxStation.Location = new System.Drawing.Point(20, 12);
+            this.comboBoxStation.Location = new System.Drawing.Point(20, 9);
             this.comboBoxStation.Name = "comboBoxStation";
-            this.comboBoxStation.Size = new System.Drawing.Size(312, 25);
+            this.comboBoxStation.Size = new System.Drawing.Size(312, 28);
             this.comboBoxStation.TabIndex = 15;
+            this.comboBoxStation.ValueMember = "Nama_Stasiun";
             this.comboBoxStation.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBoxGender
             // 
             this.comboBoxGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxGender.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGender.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxGender.FormattingEnabled = true;
             this.comboBoxGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBoxGender.Location = new System.Drawing.Point(18, 15);
+            this.comboBoxGender.Location = new System.Drawing.Point(18, 11);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(315, 25);
+            this.comboBoxGender.Size = new System.Drawing.Size(315, 28);
             this.comboBoxGender.TabIndex = 16;
             this.comboBoxGender.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -268,7 +269,7 @@ namespace BMKG_DataSafe_2
             this.panel6.Controls.Add(this.comboBoxStation);
             this.panel6.Location = new System.Drawing.Point(602, 42);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(354, 59);
+            this.panel6.Size = new System.Drawing.Size(351, 51);
             this.panel6.TabIndex = 19;
             // 
             // labelPassword
@@ -328,6 +329,7 @@ namespace BMKG_DataSafe_2
             this.Controls.Add(this.panel2);
             this.Name = "UCUserData";
             this.Size = new System.Drawing.Size(1091, 692);
+            this.Load += new System.EventHandler(this.UCUserData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

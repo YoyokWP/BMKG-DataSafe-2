@@ -47,16 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassAlgoritma.cs" />
-    <Compile Include="datastasiunDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>datastasiunDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="datauserDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>datauserDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +175,9 @@
     <EmbeddedResource Include="UCEntry.resx">
       <DependentUpon>UCEntry.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCFKLIM71Data.resx">
+      <DependentUpon>UCFKLIM71Data.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCOpen.resx">
       <DependentUpon>UCOpen.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,28 +190,6 @@
     <EmbeddedResource Include="UCUserData.resx">
       <DependentUpon>UCUserData.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="datastasiunDataSet.xsc">
-      <DependentUpon>datastasiunDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="datastasiunDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>datastasiunDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="datastasiunDataSet.xss">
-      <DependentUpon>datastasiunDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="datauserDataSet.xsc">
-      <DependentUpon>datauserDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="datauserDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>datauserDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="datauserDataSet.xss">
-      <DependentUpon>datauserDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

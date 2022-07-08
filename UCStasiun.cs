@@ -35,17 +35,15 @@ namespace BMKG_DataSafe_2
             InitializeComponent();
         }
 
-        public UCStasiun(int id, string stasiun, int wmoid, string latitude, string longitude)
+        public UCStasiun(string stasiun, int wmoid, string latitude, string longitude)
         {
             InitializeComponent();
-            ID = id;
+            //ID = id;
             Stasiun = stasiun;
             WmoId = wmoid;
             Latitude = latitude;
             Longitude = longitude;
         }
-
-        public int ID { get; set; }
 
         public string Stasiun
         {

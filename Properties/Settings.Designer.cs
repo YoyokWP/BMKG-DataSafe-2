@@ -33,5 +33,16 @@ namespace BMKG_DataSafe_2.Properties {
                 return ((string)(this["datastasiunConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-1UAI1DD\\SQLEXPRESS;Initial Catalog=Stasiun;Integrated Securit" +
+            "y=True")]
+        public string StasiunConnectionString {
+            get {
+                return ((string)(this["StasiunConnectionString"]));
+            }
+        }
     }
 }

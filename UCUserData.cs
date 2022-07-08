@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BMKG_DataSafe_2
 {
@@ -15,6 +16,18 @@ namespace BMKG_DataSafe_2
         public UCUserData()
         {
             InitializeComponent();
+        }
+
+        private void UCUserData_Load(object sender, EventArgs e)
+        {
+            SqlConnection con9 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=Stasiun;Integrated Security=True");
+            SqlCommand command = new SqlCommand("select Nama_Stasiun from Daftar_Stasiun", con9);
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = command;
+            DataTable table = new DataTable();
+            da.Fill(table);
+            comboBoxStation.DataSource = table;
+            comboBoxStation.DisplayMember = "Nama_Stasiun";
         }
 
         private void textBoxFullName_TextChanged(object sender, EventArgs e)
@@ -47,6 +60,7 @@ namespace BMKG_DataSafe_2
             string Password, Verify;
             Password = textBoxPassword.Text;
             Verify = textBoxVerifyPassword.Text;
+
             if (Verify == Password)
             {
                 labelPassword.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
@@ -59,10 +73,51 @@ namespace BMKG_DataSafe_2
             }
         }
 
+        private SqlCommand cmd;
+
         private void buttonAddDatabase_Click(object sender, EventArgs e)
         {
+            string Password, Verify;
+            Password = textBoxPassword.Text;
+            Verify = textBoxVerifyPassword.Text;
 
-            string gender = comboBoxGender.Text;
+            if (textBoxFullName.Text.Trim() == "" || textBoxEmail.Text.Trim() == "" || textBoxPassword.Text.Trim() == "" || comboBoxGender.Text.Trim() == "")
+            {
+                MessageBox.Show("Data Input Not Completed");
+            }
+            else
+            {
+                if (Verify == Password)
+                {
+                    try
+                    {
+                        SqlConnection con8 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=User;Integrated Security=True");
+
+                        cmd = new SqlCommand("insert into Daftar_User (Nama,Email,Gender,Asal_Stasiun,Password) values ('" + textBoxFullName.Text + "','" + textBoxEmail.Text + "','" + comboBoxGender.Text + "','" + comboBoxStation.Text + "','" + textBoxPassword.Text + "')", con8);
+                        con8.Open();
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Successed Add New User");
+                        ClearTextBox();
+                        con8.Close();
+                    }
+                    catch (Exception G)
+                    {
+                        MessageBox.Show(G.ToString());
+                    }
+                }
+            }
+            
+        }
+
+        void ClearTextBox()
+        {
+            textBoxFullName.Text = "";
+            textBoxEmail.Text = "";
+            comboBoxGender.Controls.Clear();
+            comboBoxStation.Controls.Clear();
+            textBoxPassword.Text = "";
+            textBoxVerifyPassword.Text = "";
         }
     }
 }
