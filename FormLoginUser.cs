@@ -24,8 +24,8 @@ namespace BMKG_DataSafe_2
 
         private void buttonVerify_Click(object sender, EventArgs e)
         {
-            SqlConnection koneksi = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=datauser;Integrated Security=True");
-            string query = "Select * from tabeluser where username = '" + textEmail.Text.Trim() + "' and password = '" + textPassword.Text.Trim() + "'";
+            SqlConnection koneksi = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=User;Integrated Security=True");
+            string query = "Select * from Daftar_User where Email = '" + textEmail.Text.Trim() + "' and Password = '" + textPassword.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, koneksi);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -37,9 +37,9 @@ namespace BMKG_DataSafe_2
 
                 string to, from, pass, mail;
                 to = (textEmail.Text).ToString();
-                from = "halocekcekcek@gmail.com";
+                from = "bmkgdatasafe@gmail.com";
                 mail = "Hey " + to + " your verification code for BMKG DataSafe is " + randomNumber + ". Don't share this code to anyone";
-                pass = "TakMungkinTerjadi";
+                pass = "glympxurhouwlhai";
 
                 MailMessage message = new MailMessage();
                 message.To.Add(to);

@@ -28,9 +28,12 @@ namespace BMKG_DataSafe_2
         private void btnUser_Click(object sender, EventArgs e)
         {
             btnUser.Enabled = true;
-            FormMainUser formMainUser = new FormMainUser();
-            formMainUser.Show();
+            FormLoginUser formLoginUser = new FormLoginUser();
+            formLoginUser.Show();
             this.Hide();
+            //FormMainUser formMainUser = new FormMainUser();
+            //formMainUser.Show();
+            //this.Hide();
         }
 
         private void btnClose1_Click(object sender, EventArgs e)
