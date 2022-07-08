@@ -103,17 +103,17 @@
     <Compile Include="UCDatabase.Designer.cs">
       <DependentUpon>UCDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCDataFKLIM71.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDataFKLIM71.Designer.cs">
+      <DependentUpon>UCDataFKLIM71.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCEntry.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UCEntry.Designer.cs">
       <DependentUpon>UCEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UCFKLIM71Data.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCFKLIM71Data.Designer.cs">
-      <DependentUpon>UCFKLIM71Data.cs</DependentUpon>
     </Compile>
     <Compile Include="UCOpen.cs">
       <SubType>UserControl</SubType>
@@ -172,11 +172,11 @@
     <EmbeddedResource Include="UCAccount.resx">
       <DependentUpon>UCAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCDataFKLIM71.resx">
+      <DependentUpon>UCDataFKLIM71.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCEntry.resx">
       <DependentUpon>UCEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCFKLIM71Data.resx">
-      <DependentUpon>UCFKLIM71Data.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCOpen.resx">
       <DependentUpon>UCOpen.cs</DependentUpon>

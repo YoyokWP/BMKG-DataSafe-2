@@ -86,7 +86,7 @@ namespace BMKG_DataSafe_2
 
         private void btnFklim71Data_Click(object sender, EventArgs e)
         {
-            UCFKLIM71Data ucDataFKLIM71 = new UCFKLIM71Data();
+            UCDataFKLIM71 ucDataFKLIM71 = new UCDataFKLIM71();
 
             panelMain.Controls.Clear();
             panelMain.Controls.Add(ucDataFKLIM71);
@@ -170,7 +170,7 @@ namespace BMKG_DataSafe_2
 
         private void btnClose1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

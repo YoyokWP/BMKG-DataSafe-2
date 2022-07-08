@@ -23,10 +23,12 @@ namespace BMKG_DataSafe_2
 
         private void UCStationData_Load(object sender, EventArgs e)
         {
+            FillDataGridView();
+
             cmd1 = new SqlCommand("select Count(*) from Daftar_Stasiun", con8);
             con8.Open();
             var Jumlah = cmd1.ExecuteScalar();
-            textBoxJumlahStasiun.Text = Jumlah.ToString();
+            labelJumlah.Text = Jumlah.ToString();
             con8.Close();
         }
 
@@ -67,6 +69,18 @@ namespace BMKG_DataSafe_2
                     MessageBox.Show(G.ToString());
                 }
             }
+        }
+
+        public void FillDataGridView()
+        {
+            SqlConnection con5 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=Stasiun;Integrated Security=True");
+
+            con5.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select * from Daftar_Stasiun", con5);
+            DataTable dt1 = new DataTable();
+            sda.Fill(dt1);
+            dataGridView1.DataSource = dt1;
+            con5.Close();
         }
 
         void ClearTextBox()

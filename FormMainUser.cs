@@ -51,7 +51,7 @@ namespace BMKG_DataSafe_2
                 {
                     //int id = int.Parse(r[0] + "");
                     string stasiun = "" + r[0];
-                    int wmoid = int.Parse(r[1] + "");
+                    string wmoid = "" + r[1];
                     string latitude = "" + r[2];
                     string longitude = "" + r[3];
 

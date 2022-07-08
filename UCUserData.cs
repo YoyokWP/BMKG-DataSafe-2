@@ -20,6 +20,8 @@ namespace BMKG_DataSafe_2
 
         private void UCUserData_Load(object sender, EventArgs e)
         {
+            FillDataGridView();
+
             SqlConnection con9 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=Stasiun;Integrated Security=True");
             SqlCommand command = new SqlCommand("select Nama_Stasiun from Daftar_Stasiun", con9);
             SqlDataAdapter da = new SqlDataAdapter();
@@ -28,6 +30,18 @@ namespace BMKG_DataSafe_2
             da.Fill(table);
             comboBoxStation.DataSource = table;
             comboBoxStation.DisplayMember = "Nama_Stasiun";
+        }
+
+        public void FillDataGridView()
+        {
+            SqlConnection con5 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=User;Integrated Security=True");
+
+            con5.Open();
+            SqlDataAdapter da = new SqlDataAdapter("select * from Daftar_User", con5);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con5.Close();
         }
 
         private void textBoxFullName_TextChanged(object sender, EventArgs e)

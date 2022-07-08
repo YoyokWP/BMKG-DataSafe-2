@@ -35,7 +35,7 @@ namespace BMKG_DataSafe_2
             InitializeComponent();
         }
 
-        public UCStasiun(string stasiun, int wmoid, string latitude, string longitude)
+        public UCStasiun(string stasiun, string wmoid, string latitude, string longitude)
         {
             InitializeComponent();
             //ID = id;
@@ -51,9 +51,9 @@ namespace BMKG_DataSafe_2
             set => lblStasiun.Text = value;
         }
 
-        public int WmoId
+        public string WmoId
         {
-            get => int.Parse(lblWmoid.Text);
+            get => lblWmoid.Text;
             set => lblWmoid.Text = value + "";
         }
 

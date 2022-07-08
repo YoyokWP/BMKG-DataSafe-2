@@ -288,9 +288,9 @@ namespace BMKG_DataSafe_2
             // panelMain
             // 
             this.panelMain.AutoScroll = true;
-            this.panelMain.Location = new System.Drawing.Point(321, 84);
+            this.panelMain.Location = new System.Drawing.Point(321, 50);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1119, 714);
+            this.panelMain.Size = new System.Drawing.Size(1119, 748);
             this.panelMain.TabIndex = 3;
             // 
             // FormMainAdmin
