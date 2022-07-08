@@ -42,23 +42,35 @@ namespace BMKG_DataSafe_2
             //int q = 881;
             //int r = 588;
 
-            SqlConnection con3 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Integrated Security=True");
-            con3.Open();
-            var command = new System.Data.SqlClient.SqlCommand();
-            command.Connection = con3;
-            command.CommandType = CommandType.Text;
-            command.CommandText = "select name from master.sys.databases";
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=DataFKLIM71;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT name FROM sys.tables", con);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("name", typeof(string));
+            dt.Load(sdr);
+            comboBoxStasiun.ValueMember = "name";
+            comboBoxStasiun.DataSource = dt;
+            con.Close();
 
-            var adapter = new System.Data.SqlClient.SqlDataAdapter(command);
-            var dataset = new DataSet();
-            adapter.Fill(dataset);
-            DataTable dtDatabases = dataset.Tables[0];
+            //SqlConnection con3 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Integrated Security=True");
+            //con3.Open();
+            //var command = new System.Data.SqlClient.SqlCommand();
+            //command.Connection = con3;
+            //command.CommandType = CommandType.Text;
+            //command.CommandText = "select name from master.sys.databases";
 
-            for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
-            {
-                comboBox1.Items.Add(dataset.Tables[0].Rows[i][0].ToString());
-                con3.Close();
-            }
+            //var adapter = new System.Data.SqlClient.SqlDataAdapter(command);
+            //var dataset = new DataSet();
+            //adapter.Fill(dataset);
+            //DataTable dtDatabases = dataset.Tables[0];
+
+            //for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
+            //{
+            //    comboBox1.Items.Add(dataset.Tables[0].Rows[i][0].ToString());
+            //    con3.Close();
+            //}
 
             dt.Columns.AddRange(new DataColumn[19] { new DataColumn("Tanggal", typeof(string)),
                 new DataColumn("Suhu 07.00", typeof(int)),
@@ -82,32 +94,32 @@ namespace BMKG_DataSafe_2
             });
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SqlConnection con4 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog='" + comboBox1.Text + "';Integrated Security=True");
+        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    SqlConnection con4 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog='" + comboBox1.Text + "';Integrated Security=True");
 
-            con4.Open();
-            DataTable schema = con4.GetSchema("Tables");
-            foreach (DataRow row in schema.Rows)
-            {
-                comboBox2.Items.Add(row[2].ToString());
-            }
-            con4.Close();
-        }
+        //    con4.Open();
+        //    DataTable schema = con4.GetSchema("Tables");
+        //    foreach (DataRow row in schema.Rows)
+        //    {
+        //        comboBox2.Items.Add(row[2].ToString());
+        //    }
+        //    con4.Close();
+        //}
 
         public void FillDataGridView()
         {
-            SqlConnection con5 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog='" + comboBox1.Text + "';Integrated Security=True");
+            SqlConnection con5 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=DataFKLIM71;Integrated Security=True");
 
             con5.Open();
-            SqlDataAdapter da = new SqlDataAdapter("select * from " + comboBox2.Text, con5);
+            SqlDataAdapter da = new SqlDataAdapter("select * from " + comboBoxStasiun.Text, con5);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             con5.Close();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBoxStasiun_SelectedIndexChanged(object sender, EventArgs e)
         {
             FillDataGridView();
         }
@@ -214,16 +226,6 @@ namespace BMKG_DataSafe_2
             textBox16.Text = decoded16;
             textBox17.Text = decoded17;
             textBox18.Text = decoded18;
-        }
-
-        private void buttonDecrypt_Click(object sender, EventArgs e)
-        {
-            //int[] w = { 2, 7, 11, 21, 42, 89, 180, 354 };
-            //int q = 881;
-            //int r = 588;
-
-            //string decoded = Decrypt1(encoded1, w, q, r);
-
         }
 
         #region Dekripsi

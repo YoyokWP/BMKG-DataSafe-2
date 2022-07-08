@@ -59,43 +59,24 @@ namespace BMKG_DataSafe_2
 
             BersihkanTextBox();
 
-            SqlConnection con3 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Integrated Security=True");
-            con3.Open();
-            var command = new System.Data.SqlClient.SqlCommand();
-            command.Connection = con3;
-            command.CommandType = CommandType.Text;
-            command.CommandText = "select name from master.sys.databases";
-
-            var adapter = new System.Data.SqlClient.SqlDataAdapter(command);
-            var dataset = new DataSet();
-            adapter.Fill(dataset);
-            DataTable dtDatabases = dataset.Tables[0];
-
-            for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
-            {
-                comboBox1.Items.Add(dataset.Tables[0].Rows[i][0].ToString());
-                con3.Close();
-            }
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SqlConnection con4 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog='"+comboBox1.Text+"';Integrated Security=True");
-
-            con4.Open();
-            DataTable schema = con4.GetSchema("Tables");
-            foreach (DataRow row in schema.Rows)
-            {
-                comboBox2.Items.Add(row[2].ToString());
-            }
-            con4.Close();
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=DataFKLIM71;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT name FROM sys.tables", con);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("name", typeof(string));
+            dt.Load(sdr);
+            comboBoxStasiun.ValueMember = "name";
+            comboBoxStasiun.DataSource = dt;
+            con.Close();
         }
 
         private SqlCommand cmd;
 
         private void buttonEncrypt_Click(object sender, EventArgs e)
         {
-            SqlConnection con7 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog='" + comboBox1.Text + "';Integrated Security=True");
+            SqlConnection con7 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=DataFKLIM71;Integrated Security=True");
 
             #region Definisi Enkripsi
             int[] w = { 2, 7, 11, 21, 42, 89, 180, 354 };
@@ -169,7 +150,7 @@ namespace BMKG_DataSafe_2
             {
                 try
                 {
-                    cmd = new SqlCommand("insert into " + comboBox2.Text + "(Tanggal,Suhu_0700,Suhu_1300,Suhu_1800,Suhu_RataRata,Suhu_Max,Suhu_Min,Curah_Hujan,Penyinaran_Matahari,Cuaca_Khusus,Tekanan_Udara,Kelembaban_0700,Kelembaban_1300,Kelembaban_1800,Kelembaban_RataRata,Angin_RataRata,Arah_Angin,Kecepatan_Angin_Max,Arah_Max) values ('" + this.dateTimePicker1.Text + "','" + enkripsi1 + "','" + enkripsi2 + "','" + enkripsi3 + "','" + enkripsi4 + "','" + enkripsi5 + "','" + enkripsi6 + "','" + enkripsi7 + "','" + enkripsi8 + "','" + enkripsi9 + "','" + enkripsi10 + "','" + enkripsi11 + "','" + enkripsi12 + "','" + enkripsi13 + "','" + enkripsi14 + "','" + enkripsi15 + "','" + enkripsi16 + "','" + enkripsi17 + "','" + enkripsi18 + "')", con7);
+                    cmd = new SqlCommand("insert into " + comboBoxStasiun.Text + "(Tanggal,Suhu_0700,Suhu_1300,Suhu_1800,Suhu_RataRata,Suhu_Max,Suhu_Min,Curah_Hujan,Penyinaran_Matahari,Cuaca_Khusus,Tekanan_Udara,Kelembaban_0700,Kelembaban_1300,Kelembaban_1800,Kelembaban_RataRata,Angin_RataRata,Arah_Angin,Kecepatan_Angin_Max,Arah_Max) values ('" + this.dateTimePicker1.Text + "','" + enkripsi1 + "','" + enkripsi2 + "','" + enkripsi3 + "','" + enkripsi4 + "','" + enkripsi5 + "','" + enkripsi6 + "','" + enkripsi7 + "','" + enkripsi8 + "','" + enkripsi9 + "','" + enkripsi10 + "','" + enkripsi11 + "','" + enkripsi12 + "','" + enkripsi13 + "','" + enkripsi14 + "','" + enkripsi15 + "','" + enkripsi16 + "','" + enkripsi17 + "','" + enkripsi18 + "')", con7);
                     con7.Open();
                     cmd.ExecuteNonQuery();
 
@@ -182,6 +163,8 @@ namespace BMKG_DataSafe_2
                     MessageBox.Show(G.ToString());
                 }
             }
+
+
         }
 
         #region Enkripsi
@@ -559,5 +542,10 @@ namespace BMKG_DataSafe_2
             labelArahMax.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
         }
         #endregion
+
+        private void comboBoxStasiun_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

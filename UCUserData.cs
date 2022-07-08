@@ -30,6 +30,13 @@ namespace BMKG_DataSafe_2
             da.Fill(table);
             comboBoxStation.DataSource = table;
             comboBoxStation.DisplayMember = "Nama_Stasiun";
+
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog=User;Integrated Security=True");
+            SqlCommand cmd1 = new SqlCommand("select Count(*) from Daftar_User", con);
+            con.Open();
+            var Jumlah = cmd1.ExecuteScalar();
+            labelJumlah.Text = Jumlah.ToString();
+            con.Close();
         }
 
         public void FillDataGridView()
