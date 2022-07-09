@@ -53,6 +53,9 @@ namespace BMKG_DataSafe_2
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxWelcome = new System.Windows.Forms.PictureBox();
             this.labelWelcome = new System.Windows.Forms.Label();
+            this.labelEmailUser = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.linkLabelLogout = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout)).BeginInit();
@@ -324,12 +327,53 @@ namespace BMKG_DataSafe_2
             this.labelWelcome.TabIndex = 4;
             this.labelWelcome.Text = "WELCOME TO BMKG DATASAFE V 1.0";
             // 
+            // labelEmailUser
+            // 
+            this.labelEmailUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelEmailUser.AutoSize = true;
+            this.labelEmailUser.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmailUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.labelEmailUser.Location = new System.Drawing.Point(642, 50);
+            this.labelEmailUser.Name = "labelEmailUser";
+            this.labelEmailUser.Size = new System.Drawing.Size(122, 21);
+            this.labelEmailUser.TabIndex = 5;
+            this.labelEmailUser.Text = "xxxxxxxxxxxxxx";
+            this.labelEmailUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(321, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(299, 21);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Hello, Welcome to BMKGDataSafe";
+            // 
+            // linkLabelLogout
+            // 
+            this.linkLabelLogout.AutoSize = true;
+            this.linkLabelLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogout.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.linkLabelLogout.Location = new System.Drawing.Point(1352, 50);
+            this.linkLabelLogout.Name = "linkLabelLogout";
+            this.linkLabelLogout.Size = new System.Drawing.Size(63, 20);
+            this.linkLabelLogout.TabIndex = 7;
+            this.linkLabelLogout.TabStop = true;
+            this.linkLabelLogout.Text = "LogOut";
+            this.linkLabelLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabelLogout.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogout_LinkClicked);
+            // 
             // FormMainUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1440, 810);
+            this.Controls.Add(this.linkLabelLogout);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelEmailUser);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -381,5 +425,8 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.PictureBox pictureBoxAccount;
         private System.Windows.Forms.Button btnEntry;
         private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.Label labelEmailUser;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabelLogout;
     }
 }

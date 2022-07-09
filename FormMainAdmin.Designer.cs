@@ -49,6 +49,7 @@ namespace BMKG_DataSafe_2
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout)).BeginInit();
@@ -288,10 +289,21 @@ namespace BMKG_DataSafe_2
             // panelMain
             // 
             this.panelMain.AutoScroll = true;
-            this.panelMain.Location = new System.Drawing.Point(321, 50);
+            this.panelMain.Location = new System.Drawing.Point(321, 75);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1119, 748);
+            this.panelMain.Size = new System.Drawing.Size(1119, 723);
             this.panelMain.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.label1.Location = new System.Drawing.Point(1249, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Hello, Administrator";
             // 
             // FormMainAdmin
             // 
@@ -299,6 +311,7 @@ namespace BMKG_DataSafe_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1440, 810);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.panel1);
@@ -319,6 +332,7 @@ namespace BMKG_DataSafe_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -343,5 +357,6 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -16,5 +16,14 @@ namespace BMKG_DataSafe_2
         {
             InitializeComponent();
         }
+
+        private void linkLabelLogout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormLoginUser formLoginUser = new FormLoginUser();
+            FormMainUser formMainUser = new FormMainUser();
+            formLoginUser.Show();
+            formMainUser.Close();
+            this.Hide();
+        }
     }
 }

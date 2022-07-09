@@ -39,7 +39,7 @@ namespace BMKG_DataSafe_2
                 to = (textEmail.Text).ToString();
                 from = "bmkgdatasafe@gmail.com";
                 mail = "Hey " + to + " your verification code for BMKG DataSafe is " + randomNumber + ". Don't share this code to anyone";
-                pass = "glympxurhouwlhai";
+                pass = "oguruyuirhrwvbtm";
 
                 MailMessage message = new MailMessage();
                 message.To.Add(to);
@@ -74,6 +74,7 @@ namespace BMKG_DataSafe_2
         {
             if (textVerification.Text == randomNumber)
             {
+                SetValueForEmail = textEmail.Text;
                 FormMainUser formMainUser = new FormMainUser();
                 formMainUser.Show();
                 this.Hide();
@@ -108,5 +109,7 @@ namespace BMKG_DataSafe_2
         {
             MessageBox.Show("Call Administrator bmkgdatasafe@gmail.com");
         }
+
+        public static string SetValueForEmail = "";
     }
 }

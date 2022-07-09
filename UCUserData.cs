@@ -140,5 +140,10 @@ namespace BMKG_DataSafe_2
             textBoxPassword.Text = "";
             textBoxVerifyPassword.Text = "";
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

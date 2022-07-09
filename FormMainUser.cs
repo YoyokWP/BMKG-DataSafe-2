@@ -27,10 +27,14 @@ namespace BMKG_DataSafe_2
             pictureBoxWelcome.BringToFront();
         }
 
+
         private void FormMainUser_Load(object sender, EventArgs e)
         {
             textBoxJam.Text = DateTime.Now.ToLongTimeString();
             textBoxTanggal.Text = DateTime.Now.ToLongDateString();
+
+            //label1.Text = Form1.SetValueForText1;
+            labelEmailUser.Text = FormLoginUser.SetValueForEmail;
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -227,6 +231,13 @@ namespace BMKG_DataSafe_2
         private void btnClose1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void linkLabelLogout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormLogin formLogin = new FormLogin();
+            formLogin.Show();
+            this.Hide();
         }
     }
 }

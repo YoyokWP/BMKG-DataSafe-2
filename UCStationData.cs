@@ -110,5 +110,10 @@ namespace BMKG_DataSafe_2
         {
             labelLongitude.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
         }
+
+        private void buttonDeleteStation_Click(object sender, EventArgs e)
+        {
+            //buttonDeleteStation.ForeColor = System.Drawing.Color.FromArgb(255, 255, 255);
+        }
     }
 }
