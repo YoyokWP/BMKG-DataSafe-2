@@ -69,6 +69,7 @@ namespace BMKG_DataSafe_2
                     MessageBox.Show(G.ToString());
                 }
             }
+            FillDataGridView();
         }
 
         public void FillDataGridView()
@@ -113,7 +114,7 @@ namespace BMKG_DataSafe_2
 
         private void buttonDeleteStation_Click(object sender, EventArgs e)
         {
-            //buttonDeleteStation.ForeColor = System.Drawing.Color.FromArgb(255, 255, 255);
+           
         }
     }
 }

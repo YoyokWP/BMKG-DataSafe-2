@@ -33,7 +33,6 @@ namespace BMKG_DataSafe_2
             textBoxJam.Text = DateTime.Now.ToLongTimeString();
             textBoxTanggal.Text = DateTime.Now.ToLongDateString();
 
-            //label1.Text = Form1.SetValueForText1;
             labelEmailUser.Text = FormLoginUser.SetValueForEmail;
         }
 

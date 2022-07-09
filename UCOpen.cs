@@ -54,24 +54,6 @@ namespace BMKG_DataSafe_2
             comboBoxStasiun.DataSource = dt;
             con.Close();
 
-            //SqlConnection con3 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Integrated Security=True");
-            //con3.Open();
-            //var command = new System.Data.SqlClient.SqlCommand();
-            //command.Connection = con3;
-            //command.CommandType = CommandType.Text;
-            //command.CommandText = "select name from master.sys.databases";
-
-            //var adapter = new System.Data.SqlClient.SqlDataAdapter(command);
-            //var dataset = new DataSet();
-            //adapter.Fill(dataset);
-            //DataTable dtDatabases = dataset.Tables[0];
-
-            //for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
-            //{
-            //    comboBox1.Items.Add(dataset.Tables[0].Rows[i][0].ToString());
-            //    con3.Close();
-            //}
-
             dt.Columns.AddRange(new DataColumn[19] { new DataColumn("Tanggal", typeof(string)),
                 new DataColumn("Suhu 07.00", typeof(int)),
                 new DataColumn("Suhu 13.00", typeof(int)),
@@ -93,19 +75,6 @@ namespace BMKG_DataSafe_2
                 new DataColumn("Suhu 13.90", typeof(int)),
             });
         }
-
-        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    SqlConnection con4 = new SqlConnection(@"Data Source=DESKTOP-1UAI1DD\SQLEXPRESS;Initial Catalog='" + comboBox1.Text + "';Integrated Security=True");
-
-        //    con4.Open();
-        //    DataTable schema = con4.GetSchema("Tables");
-        //    foreach (DataRow row in schema.Rows)
-        //    {
-        //        comboBox2.Items.Add(row[2].ToString());
-        //    }
-        //    con4.Close();
-        //}
 
         public void FillDataGridView()
         {
@@ -196,18 +165,9 @@ namespace BMKG_DataSafe_2
             string decoded17 = Decrypt17(encodeConvert17, w, q, r);
             string decoded18 = Decrypt18(encodeConvert18, w, q, r);
 
-            //int decod = Int32.Parse(decoded1);
-
-            //float value = float.Parse(mystring, CultureInfo.InvariantCulture.NumberFormat);
-
-            //float decod1 = float.Parse(decoded1, CultureInfo.InvariantCulture.NumberFormat);
-
-            //dt.Rows.Add(tanggal, decoded1); // decoded2, decoded3, decoded4, decoded5, decoded6, decoded7, decoded8, decoded9, decoded10, decoded11, decoded12, decoded13, decoded14, decoded15, decoded16, decoded17, decoded18);
-            //this.dataGridView2.DataSource = dt;
-
-            string tanggalx = tanggal.Remove(11);
-
-            labelTanggal.Text = tanggalx;
+            string tanggal1 = tanggal.Remove(11);
+            labelStasiun.Text = comboBoxStasiun.Text.Replace("_"," ");
+            labelTanggal.Text = tanggal1;
             textBox1.Text = decoded1;
             textBox2.Text = decoded2;
             textBox3.Text = decoded3;
@@ -1015,14 +975,9 @@ namespace BMKG_DataSafe_2
             textBox18.Clear();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //dt.Rows.Add(tanggal, decoded1); // decoded2, decoded3, decoded4, decoded5, decoded6, decoded7, decoded8, decoded9, decoded10, decoded11, decoded12, decoded13, decoded14, decoded15, decoded16, decoded17, decoded18);
-            //this.dataGridView2.DataSource = dt;
 
-          
-            //dt.Rows.Add(labelTanggal.Text, textBox1.Text);
-            //this.dataGridView2.DataSource = dt;
         }
     }
 }

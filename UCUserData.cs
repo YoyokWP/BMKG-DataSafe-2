@@ -128,7 +128,7 @@ namespace BMKG_DataSafe_2
                     }
                 }
             }
-            
+            FillDataGridView();
         }
 
         void ClearTextBox()
