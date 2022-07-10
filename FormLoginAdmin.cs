@@ -37,11 +37,18 @@ namespace BMKG_DataSafe_2
                 FormMainAdmin formMainAdmin = new FormMainAdmin();
                 formMainAdmin.Show();
                 this.Hide();
+
+                buttonLogin.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
             }
             else
             {
                 MessageBox.Show("Masukkan ID dengan benar");
             }
+        }
+
+        private void btnClose1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

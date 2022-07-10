@@ -52,6 +52,9 @@ namespace BMKG_DataSafe_2
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnClose1 = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -62,6 +65,8 @@ namespace BMKG_DataSafe_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -251,9 +256,9 @@ namespace BMKG_DataSafe_2
             this.buttonVerify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVerify.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVerify.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.buttonVerify.Location = new System.Drawing.Point(710, 303);
+            this.buttonVerify.Location = new System.Drawing.Point(685, 305);
             this.buttonVerify.Name = "buttonVerify";
-            this.buttonVerify.Size = new System.Drawing.Size(107, 31);
+            this.buttonVerify.Size = new System.Drawing.Size(150, 31);
             this.buttonVerify.TabIndex = 39;
             this.buttonVerify.Text = "Verify";
             this.buttonVerify.UseVisualStyleBackColor = false;
@@ -265,9 +270,9 @@ namespace BMKG_DataSafe_2
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.buttonLogin.Location = new System.Drawing.Point(710, 416);
+            this.buttonLogin.Location = new System.Drawing.Point(685, 416);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(107, 31);
+            this.buttonLogin.Size = new System.Drawing.Size(150, 31);
             this.buttonLogin.TabIndex = 40;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -304,12 +309,12 @@ namespace BMKG_DataSafe_2
             // 
             this.btnClose1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
             this.btnClose1.FlatAppearance.BorderSize = 0;
-            this.btnClose1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnClose1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.btnClose1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose1.Image = ((System.Drawing.Image)(resources.GetObject("btnClose1.Image")));
-            this.btnClose1.Location = new System.Drawing.Point(925, 0);
+            this.btnClose1.Location = new System.Drawing.Point(917, 0);
             this.btnClose1.Name = "btnClose1";
-            this.btnClose1.Size = new System.Drawing.Size(35, 30);
+            this.btnClose1.Size = new System.Drawing.Size(43, 30);
             this.btnClose1.TabIndex = 43;
             this.btnClose1.UseVisualStyleBackColor = false;
             this.btnClose1.Click += new System.EventHandler(this.btnClose1_Click);
@@ -323,12 +328,44 @@ namespace BMKG_DataSafe_2
             this.pictureBox10.TabIndex = 44;
             this.pictureBox10.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.panel2.Controls.Add(this.pictureBox11);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Location = new System.Drawing.Point(0, 1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(201, 27);
+            this.panel2.TabIndex = 45;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(28, 22);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 0;
+            this.pictureBox11.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Location = new System.Drawing.Point(36, 4);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(156, 19);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "BMKG DataSafe V 1.0";
+            // 
             // FormLoginUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(960, 540);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnClose1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);
@@ -365,6 +402,9 @@ namespace BMKG_DataSafe_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,5 +434,8 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btnClose1;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -31,6 +31,9 @@ namespace BMKG_DataSafe_2
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnClose1 = new System.Windows.Forms.Button();
             this.panelControl = new System.Windows.Forms.Panel();
             this.btnUserData = new System.Windows.Forms.Button();
@@ -50,7 +53,12 @@ namespace BMKG_DataSafe_2
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.linkLabelLogout = new System.Windows.Forms.LinkLabel();
+            this.pictureBoxWelcome = new System.Windows.Forms.PictureBox();
+            this.labelWelcome = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDatabase)).BeginInit();
@@ -60,11 +68,13 @@ namespace BMKG_DataSafe_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWelcome)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnClose1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -72,15 +82,45 @@ namespace BMKG_DataSafe_2
             this.panel1.Size = new System.Drawing.Size(1440, 35);
             this.panel1.TabIndex = 1;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(3, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(201, 29);
+            this.panel2.TabIndex = 7;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(28, 22);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(36, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 19);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "BMKG DataSafe V 1.0";
+            // 
             // btnClose1
             // 
             this.btnClose1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
             this.btnClose1.FlatAppearance.BorderSize = 0;
             this.btnClose1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose1.Image = ((System.Drawing.Image)(resources.GetObject("btnClose1.Image")));
-            this.btnClose1.Location = new System.Drawing.Point(1405, 0);
+            this.btnClose1.Location = new System.Drawing.Point(1389, 0);
             this.btnClose1.Name = "btnClose1";
-            this.btnClose1.Size = new System.Drawing.Size(35, 35);
+            this.btnClose1.Size = new System.Drawing.Size(51, 35);
             this.btnClose1.TabIndex = 5;
             this.btnClose1.UseVisualStyleBackColor = false;
             this.btnClose1.Click += new System.EventHandler(this.btnClose1_Click);
@@ -289,9 +329,9 @@ namespace BMKG_DataSafe_2
             // panelMain
             // 
             this.panelMain.AutoScroll = true;
-            this.panelMain.Location = new System.Drawing.Point(321, 75);
+            this.panelMain.Location = new System.Drawing.Point(321, 86);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1119, 723);
+            this.panelMain.Size = new System.Drawing.Size(1119, 712);
             this.panelMain.TabIndex = 3;
             // 
             // label1
@@ -299,11 +339,46 @@ namespace BMKG_DataSafe_2
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
-            this.label1.Location = new System.Drawing.Point(1249, 46);
+            this.label1.Location = new System.Drawing.Point(325, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Hello, Administrator";
+            // 
+            // linkLabelLogout
+            // 
+            this.linkLabelLogout.AutoSize = true;
+            this.linkLabelLogout.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogout.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.linkLabelLogout.Location = new System.Drawing.Point(1340, 45);
+            this.linkLabelLogout.Name = "linkLabelLogout";
+            this.linkLabelLogout.Size = new System.Drawing.Size(63, 20);
+            this.linkLabelLogout.TabIndex = 8;
+            this.linkLabelLogout.TabStop = true;
+            this.linkLabelLogout.Text = "LogOut";
+            this.linkLabelLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabelLogout.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogout_LinkClicked);
+            // 
+            // pictureBoxWelcome
+            // 
+            this.pictureBoxWelcome.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxWelcome.Image")));
+            this.pictureBoxWelcome.Location = new System.Drawing.Point(728, 275);
+            this.pictureBoxWelcome.Name = "pictureBoxWelcome";
+            this.pictureBoxWelcome.Size = new System.Drawing.Size(375, 328);
+            this.pictureBoxWelcome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxWelcome.TabIndex = 9;
+            this.pictureBoxWelcome.TabStop = false;
+            // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.ForeColor = System.Drawing.Color.White;
+            this.labelWelcome.Location = new System.Drawing.Point(741, 246);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(348, 22);
+            this.labelWelcome.TabIndex = 10;
+            this.labelWelcome.Text = "WELCOME TO BMKG DATASAFE V 1.0";
             // 
             // FormMainAdmin
             // 
@@ -311,16 +386,22 @@ namespace BMKG_DataSafe_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1440, 810);
+            this.Controls.Add(this.linkLabelLogout);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBoxWelcome);
+            this.Controls.Add(this.labelWelcome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMainAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainAdmin";
             this.Load += new System.EventHandler(this.FormMainAdmin_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelControl.ResumeLayout(false);
             this.panelControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout)).EndInit();
@@ -331,6 +412,7 @@ namespace BMKG_DataSafe_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWelcome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,5 +440,11 @@ namespace BMKG_DataSafe_2
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabelLogout;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBoxWelcome;
+        private System.Windows.Forms.Label labelWelcome;
     }
 }

@@ -57,6 +57,8 @@ namespace BMKG_DataSafe_2
                 {
                     smtp.Send(message);
                     MessageBox.Show("Verification Code Send Succesfully, Check Your Email", "Email", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    buttonVerify.Text = "Verified";
+                    buttonVerify.ForeColor = System.Drawing.Color.FromArgb(1, 247, 182);
                 }
                 catch (Exception ex)
                 {

@@ -20,9 +20,12 @@ namespace BMKG_DataSafe_2
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             btnAdmin.Enabled = true;
-            FormMainAdmin formMainAdmin = new FormMainAdmin();
-            formMainAdmin.Show();
+            FormLoginAdmin formLoginAdmin = new FormLoginAdmin();
+            formLoginAdmin.Show();
             this.Hide();
+            //FormMainAdmin formMainAdmin = new FormMainAdmin();
+            //formMainAdmin.Show();
+            //this.Hide();
         }
 
         private void btnUser_Click(object sender, EventArgs e)

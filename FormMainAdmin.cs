@@ -25,7 +25,8 @@ namespace BMKG_DataSafe_2
 
         private void FormMainAdmin_Load(object sender, EventArgs e)
         {
-            
+            labelWelcome.BringToFront();
+            pictureBoxWelcome.BringToFront();
         }
 
         private void btnStation_Click(object sender, EventArgs e)
@@ -36,6 +37,9 @@ namespace BMKG_DataSafe_2
             panelMain.Controls.Add(ucDtastionData);
 
             #region Tampilan tombol
+            labelWelcome.Hide();
+            pictureBoxWelcome.Hide();
+
             pictureBoxStation.Show();
             pictureBoxUserData.Hide();
             pictureBoxFklim71Data.Hide();
@@ -64,6 +68,9 @@ namespace BMKG_DataSafe_2
             panelMain.Controls.Add(ucUserData);
 
             #region Tampilan tombol
+            labelWelcome.Hide();
+            pictureBoxWelcome.Hide();
+
             pictureBoxStation.Hide();
             pictureBoxUserData.Show();
             pictureBoxFklim71Data.Hide();
@@ -92,6 +99,9 @@ namespace BMKG_DataSafe_2
             panelMain.Controls.Add(ucDataFKLIM71);
 
             #region Tampilan tombol
+            labelWelcome.Hide();
+            pictureBoxWelcome.Hide();
+
             pictureBoxStation.Hide();
             pictureBoxUserData.Hide();
             pictureBoxFklim71Data.Show();
@@ -120,6 +130,9 @@ namespace BMKG_DataSafe_2
             panelMain.Controls.Add(ucDatabase);
 
             #region Tampilan tombol
+            labelWelcome.Hide();
+            pictureBoxWelcome.Hide();
+
             pictureBoxStation.Hide();
             pictureBoxUserData.Hide();
             pictureBoxFklim71Data.Hide();
@@ -148,6 +161,9 @@ namespace BMKG_DataSafe_2
             panelMain.Controls.Add(ucAbout);
 
             #region Tampilan tombol
+            labelWelcome.Hide();
+            pictureBoxWelcome.Hide();
+
             pictureBoxStation.Hide();
             pictureBoxUserData.Hide();
             pictureBoxFklim71Data.Hide();
@@ -171,6 +187,13 @@ namespace BMKG_DataSafe_2
         private void btnClose1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void linkLabelLogout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormLogin formLogin = new FormLogin();
+            formLogin.Show();
+            this.Hide();
         }
     }
 }

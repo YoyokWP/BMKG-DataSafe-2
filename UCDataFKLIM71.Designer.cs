@@ -106,7 +106,7 @@ namespace BMKG_DataSafe_2
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 30;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1022, 520);
+            this.dataGridView1.Size = new System.Drawing.Size(1022, 561);
             this.dataGridView1.TabIndex = 3;
             // 
             // label3

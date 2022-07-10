@@ -52,9 +52,9 @@ namespace BMKG_DataSafe_2
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
-            this.progressBar1.Location = new System.Drawing.Point(106, 434);
+            this.progressBar1.Location = new System.Drawing.Point(105, 434);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(743, 7);
+            this.progressBar1.Size = new System.Drawing.Size(746, 7);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 1;
             this.progressBar1.UseWaitCursor = true;
@@ -64,7 +64,7 @@ namespace BMKG_DataSafe_2
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(100, 429);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(756, 17);
+            this.pictureBox2.Size = new System.Drawing.Size(757, 17);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
