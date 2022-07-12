@@ -48,21 +48,19 @@ namespace BMKG_DataSafe_2
             {
                 try
                 {
-                    cmd = new SqlCommand("insert into Daftar_Stasiun (Nama_Stasiun,WMO_ID,Latitude,Longitude) values ('" + textBoxStationName.Text + "','" + textBoxWMOID.Text +"', '" + textBoxLatitude.Text + "','" + textBoxLongitude.Text + "')", con8);
                     con8.Open();
+                    cmd = new SqlCommand("insert into Daftar_Stasiun (Nama_Stasiun,WMO_ID,Latitude,Longitude) values ('" + textBoxStationName.Text + "','" + textBoxWMOID.Text +"', '" + textBoxLatitude.Text + "','" + textBoxLongitude.Text + "')", con8);
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Successed Add New Station");
                     ClearTextBox();
                     con8.Close();
 
-                    string sql = "CREATE TABLE "+ namastasiun +" (Tanggal date, Suhu_0700 varchar(50), Suhu_1300 varchar(50), Suhu_1800 varchar(50), Suhu_RataRata varchar(50), Suhu_Max varchar(50), Suhu_Min varchar(50), Curah_Hujan varchar(50), Penyinaran_Matahari varchar(50), Cuaca_Khusus varchar(50), Tekanan_Udara varchar(50), Kelembaban_0700 varchar(50), Kelembaban_1300 varchar(50), Kelembaban_1800 varchar(50), Kelembaban_RataRata varchar(50), Angin_RataRata varchar(50), Arah_Angin varchar(50), Kecepatan_Angin_Max varchar(50), Arah_Max varchar(50))";
                     con9.Open();
+                    string sql = "CREATE TABLE "+ namastasiun +" (Tanggal date, Suhu_0700 varchar(50), Suhu_1300 varchar(50), Suhu_1800 varchar(50), Suhu_RataRata varchar(50), Suhu_Max varchar(50), Suhu_Min varchar(50), Curah_Hujan varchar(50), Penyinaran_Matahari varchar(50), Cuaca_Khusus varchar(50), Tekanan_Udara varchar(50), Kelembaban_0700 varchar(50), Kelembaban_1300 varchar(50), Kelembaban_1800 varchar(50), Kelembaban_RataRata varchar(50), Angin_RataRata varchar(50), Arah_Angin varchar(50), Kecepatan_Angin_Max varchar(50), Arah_Max varchar(50))";
                     cmd2 = new SqlCommand(sql, con9);
                     cmd2.ExecuteNonQuery();
                     con9.Close();
-                    
-
                 }
                 catch (Exception G)
                 {
